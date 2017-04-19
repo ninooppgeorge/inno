@@ -1,0 +1,171 @@
+.display--none {
+    display: none;
+}
+
+.brandd .category-img {
+    position: relative;
+    padding: 5px;
+    border: 1px solid #f1f1f1;
+    width: 85%;
+}
+
+.brandd .col-xxs-6 {
+    padding-bottom: 50px;
+    padding-left: 0px;
+}
+
+.brandd .actions button.button.btn-cart {
+    background: #c13333;
+    border: 1px solid #ddd;
+    margin: 10px 8px 0 0px;
+    padding: 10px 30px 10px 30px;
+    color: #fff;
+    line-height: 14px;
+    transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
+}
+
+.brandd .latest-category a {
+    color: #06F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin: 0px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.brandd .item-content p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+
+.brandname .category-img {
+    position: relative;
+    /* padding: 30px; */
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.brandname .col-xxs-6 {
+    padding-bottom: 30px;
+}
+
+
+/* tables */
+
+.contentmanagement .block-account .block-title {
+    padding-left: 10px;
+    background-color: #c3c3c3;
+    color: #333;
+    border: none;
+    text-align: left;
+}
+
+.contentmanagement textarea {}
+
+@media only screen and (max-width: 1600px) and (min-width: 767px) {
+    .contentmanagement .mini-cart .basket .title {
+        color: #fff;
+    }
+    .contentmanagement .mini-cart {
+        color: #333;
+        background: #c13333;
+        font-family: 'Open Sans', sans-serif
+    }
+    .insider .mini-cart {
+        color: #333;
+        background: #c13333;
+        font-family: 'Open Sans', sans-serif
+    }
+    .insider .mini-cart .basket .title {
+        color: #fff;
+    }
+}
+
+
+/* tables */
+
+.orhis table.tablesorter {
+    font-family: arial;
+    background-color: #CDCDCD;
+    margin: 10px 0pt 15px;
+    font-size: 10pt;
+    width: 100%;
+    text-align: left;
+}
+
+.orhis table.tablesorter thead tr th, .orhis table.tablesorter tfoot tr th {
+    background-color: #eaeaea;
+    border: 1px solid #FFF;
+    font-size: 9pt;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding: 5px;
+}
+
+.orhis table.tablesorter thead tr .header {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+.orhis table.tablesorter tbody td {
+    color: #3D3D3D;
+    padding-left: 8px;
+    padding: 5px;
+    background-color: #FFF;
+    vertical-align: top;
+}
+
+.orhis table.tablesorter tbody tr.odd td {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+}
+
+.orhis table.tablesorter tbody tr.even td {
+    background-color: #FFF;
+    border: 1px solid #ddd;
+}
+
+.orhis table.tablesorter thead tr .headerSortUp {
+    background-image: url(../images/asc.png);
+}
+
+.orhis table.tablesorter thead tr .headerSortDown {
+    background-image: url(../images/desc.png);
+}
+
+.orhis table.tablesorter thead tr .headerSortDown, .orhis table.tablesorter thead tr .headerSortUp {
+    background-color: #8dbdd8;
+}
+
+.orhis .block-account .block-title {
+    padding-left: 10px;
+    background-color: #c3c3c3;
+    color: #333;
+    border: none;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 767px) {
+    .orhis .mini-cart .basket .title {
+        color: #fff;
+    }
+    .orhis .mini-cart {
+        color: #333;
+        background: #c13333;
+        font-family: 'Open Sans', sans-serif
+    }
+}
+
+.orhis .fa {
+    color: #888;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}

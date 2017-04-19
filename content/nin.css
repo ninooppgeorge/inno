@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,800,400,600');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light');
+
+.margin-top--0{
+  margin-top: 0px !important;
+}
+
+.claimmsg{
+  font-size: 12px;
+  margin-left: 0px;
+  border-left: 2px solid #ccc;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: #777;
+}
+.avatarimage{
+
+}
+.avatarimage img{
+  width: 25px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+.avatarimage:hover .popnin{
+  visibility: visible;
+}
+.avatarimage .popnin{
+  border: 1px solid #ddd;
+  padding: 20px;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  margin-left: -35px;
+  margin-top: 0px;
+  border-radius: 2px;
+  visibility: hidden;
+}
+
+.avatarimage .popnin .popcontent{
+  text-align: left;
+  font-size: 13px;
+}
+.avatarimage .popnin .popcontent p{
+  margin-bottom: 1px;
+}
+.avatarimage .popnin .popcontent p span{
+  font-weight: bold;
+}
