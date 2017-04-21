@@ -52,3 +52,7 @@
 .redlink{
   color: #c13333;
 }
+.form-list li.control label, .form-list li.has-pretty-child label
+{
+  vertical-align: middle !important;
+}
