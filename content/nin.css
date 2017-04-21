@@ -66,6 +66,7 @@
     padding: .2em .2em 0;
     width: 17em;
     padding-right: 14px;
+    background: #fff;
     border: 1px solid #ddd;
 }
 
@@ -253,7 +254,12 @@
 {
   vertical-align: middle !important;
 }
-
+.display--block{
+  display: block;
+}
+.width--100{
+  width: 100% !important;
+}
 .multisel{
-  
+
 }
