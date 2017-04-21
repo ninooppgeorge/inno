@@ -369,7 +369,7 @@ a.block-currency:focus {
 	height: 32px;
 	color: #333;
 	border: 1px solid #F5F5F5;
-	padding: 0 10px;
+	padding: 8px 20px 8px 20px;
 	outline: none;
 	float: left;
 }
