@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../content/fontawesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="../content/masterslider/style/masterslider.css"/>
     <link rel="stylesheet" href="../content/brand.css"/>
+    <link rel="stylesheet" href="https://uxsolutions.github.io/bootstrap-datepicker/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
 
 </head>
 <body>
@@ -24,7 +25,7 @@
 
 
 
-  
+
 
 
     <div class="container">
@@ -41,7 +42,6 @@
         <option value="41">Featured</option>
       </select>
       <!-- select end -->
-
       <!-- calender start -->
       <div class="col-md-3  span_7">
         <div class="">
@@ -131,7 +131,9 @@
                   </div>
               </aside>
               <!-- side bar end -->
+                <input id="datepicker" data-provide="datepicker">
     </div>
+
 
 
 
@@ -174,6 +176,8 @@
     <script src="../scripts/underscore-min.js"></script>
     <script src="../scripts/moment-2.2.1.js"></script>
     <script src="../scripts/site.js"></script>
-
+    <script type="text/javascript">
+      $('#datepicker').datepicker();
+    </script>
 </body>
 </html>
