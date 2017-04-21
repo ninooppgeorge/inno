@@ -345,7 +345,7 @@ a.block-currency:focus {
 	border: medium none;
 	float: left;
 	height: 32px;
-	padding: 5px;
+	padding: 5px 20px;
 	width: 25%;
 	line-height: 30px;
 	    border: 1px solid #f1f1f1;
@@ -358,7 +358,7 @@ a.block-currency:focus {
 	width: 25%;
 	height: 32px;
 	line-height: 30px;
-	padding: 5px;
+	padding: 5px 20px;
 	 border: 1px solid #f1f1f1;
 	background: #f0f0f0;
 }
