@@ -39,6 +39,9 @@
   border-radius: 2px;
   visibility: hidden;
 }
+.avatarimage .popnin .popup-link{
+  padding: 0px !important;
+}
 
 .avatarimage .popnin:before, .avatarimage .popnin:after {
   content: "";
@@ -73,7 +76,45 @@
   font-weight: bold;
 }
 
+.sidebar{
 
+}
+.sidebar .block-account .block-content{
+  padding: 0px;
+}
+.sidebar .block .block-content{
+  margin-left: 0px;
+}
+.sidebar .block-account .block-content ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.sidebar .block-account .block-content ul li{
+    padding-left: 15px;
+}
+.sidebar .block-account .block-content ul li:hover{
+  background: #c13333;
+  color: #fff;
+}
+.sidebar .block-account .block-content ul li:hover:before{
+  color: #fff !important;
+}
+.sidebar .block-account .block-content ul li:hover a{
+    color: #fff;
+}
+.sidebar .block-account .block-content ul li.active{
+    background: #c13333;
+    color: #fff;
+}
+.sidebar .block-account .block-content ul li.active:before{
+  color: #fff !important;
+}
+.sidebar .block-account .block-content ul li.active a{
+    color: #fff;
+}
+.padding--left--3per{
+  padding-left: 3%;
+}
 /* datepicker ui */
 /*!
  * jQuery UI Datepicker 1.9.0
