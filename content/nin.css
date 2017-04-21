@@ -24,18 +24,42 @@
 }
 .avatarimage:hover .popnin{
   visibility: visible;
+  -webkit-transition: all ease 1s;
 }
 .avatarimage .popnin{
   border: 1px solid #ddd;
   padding: 20px;
   display: block;
   position: absolute;
+  -webkit-transition: all ease 1s;
   z-index: 1000;
   background: #fff;
-  margin-left: -35px;
-  margin-top: 0px;
+  margin-left: -120px;
+  margin-top: 8px;
   border-radius: 2px;
   visibility: hidden;
+}
+
+.avatarimage .popnin:before, .avatarimage .popnin:after {
+  content: "";
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  top: -5%;
+  left: 8%;
+  margin-left: -10px;
+}
+
+.avatarimage .popnin:before {
+  border-bottom: 8px solid #ddd;
+  margin-top: -3px;
+}
+
+.avatarimage .popnin:after{
+  border-bottom: 8px solid #fff;
+  margin-top: -2px;
+  z-index: 1;
 }
 
 .avatarimage .popnin .popcontent{
