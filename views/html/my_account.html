@@ -307,7 +307,7 @@
           <div class="row">
             <ul>
               <li class="home"><a href="index.html" title="Go to Home Page">HOME</a><span> ⁄ </span></li>
-              <li><a href="#" title="Go to Home Page">CONTENT MANAGEMENT</a></li>
+              <li><a href="#" title="Go to Home Page">MY ACCOUNT</a></li>
             </ul>
           </div>
         </div>
@@ -319,14 +319,14 @@
           <div class="row">
             <aside style="visibility: visible;" class="col-left sidebar col-sm-3">
               <div class="block block-account">
-                <div class="block-title"><a href="my_account.html"><i style="color: #888;" class="fa fa-lock"></i>   My Account</a></div>
+                <div class="block-title"><a href="my_account.html"><i style=" color: #888;" class="fa fa-lock"></i>   My Account</a></div>
                 <div class="block-content">
                   <ul>
-                    <li><a href="#">Contact Details</a></li>
+                    <li class="active"><a href="#">Contact Details</a></li>
                     <li><a href="#">Address Book</a></li>
                   </ul>
                 </div>
-                <div class="block-title"><a href="usermanagement.html"><i style="color: #888;" class="fa fa-user"></i>   User Management</a></div>
+                <div class="block-title"><a href="usermanagement.html"><i style=" color: #888;" class="fa fa-user"></i>   User Management</a></div>
                 <div class="block-content">
                   <ul>
                     <li><a href="#">Manage Users</a></li>
@@ -334,7 +334,7 @@
                     <li><a href="#">Manage Permissions</a></li>
                   </ul>
                 </div>
-                <div class="block-title"><a href="contentmanagement.html"><i style="color: #888;" class="fa fa-tasks"></i>   Content Management</a></div>
+                <div class="block-title"><a href="contentmanagement.html"><i style=" color: #888;" class="fa fa-tasks"></i>   Content Management</a></div>
                 <div class="block-content">
                   <ul>
                     <li><a href="#">Manage Rotating Banner</a></li>
@@ -343,7 +343,7 @@
                     <li><a href="#">Manage Events</a></li>
                   </ul>
                 </div>
-                <div class="block-title"><a href="orderhistory.html"><i style="color: #888;" class="fa fa-history"></i>   Order History</a></div>
+                <div class="block-title"><a href="orderhistory.html"><i style=" color: #888;" class="fa fa-history"></i>   Order History</a></div>
                 <div class="block-content">
                   <ul>
                     <li><a href="#">Order Status</a></li>
@@ -351,185 +351,34 @@
                 </div>
               </div>
             </aside>
-            <section style=" background:#f0f0f0;padding-top: 15px;" class="col-main col-sm-9">
+            <section style="background: #f0f0f0; padding-top: 15px;" class="col-main col-sm-9">
               <div class="category-products">
                 <div style="padding-top:0px" class="toolbar">
                   <div class="content">
                     <div class="page-title">
-                      <h2 style=" border-bottom:1px solid #f1f1f1; padding-bottom:10px; margin-bottom:10px">Content Management</h2>
+                      <h2 style=" border-bottom:1px solid #f1f1f1; padding-bottom:10px; margin-bottom:10px">My account summary</h2>
                     </div>
-                    <h4>Manage Rotating Banner</h4>
-                    <div class="table-responsive">
-                      <form method="post" action="#updatePost/">
-                        <input type="hidden" value="Vwww7itR3zQFe86m" name="form_key">
-                        <fieldset>
-                          <table id="shopping-cart-table" class="data-table">
-                            <thead>
-                              <tr class="first last">
-                                <th rowspan="1"><span class="nobr">Select</span></th>
-                                <th colspan="1" class="a-center"><span class="nobr">Image Description</span></th>
-                                <th rowspan="1" class="a-center">Image preview</th>
-                                <th colspan="2" class="a-center">Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class="first odd">
-                                <td>
-                                  <input type="checkbox">
-                                </td>
-                                <td>
-                                  <h5 class="product-name"><a href="#">Image1</a></h5>
-                                </td>
-                                <td><span class="cart-price"> Display Image </span></td>
-                                <td><a title="Edit item parameters" href="#configure/id/15945/" class="edit-bnt"></a></td>
-                                <td><a title="Remove item" href="#" class="remove-item"><span><span>Remove item</span></span></a></td>
-                              </tr>
-                              <tr class="first even">
-                                <td>
-                                  <input type="checkbox">
-                                </td>
-                                <td>
-                                  <h5 class="product-name"><a href="#">Image2</a></h5>
-                                </td>
-                                <td><span class="cart-price"> Display Image</span></td>
-                                <td><a title="Edit item parameters" href="#configure/id/15945/" class="edit-bnt"></a></td>
-                                <td><a title="Remove item" href="#" class="remove-item"><span><span>Remove item</span></span></a></td>
-                              </tr>
-                              <!-- -End Row------>
-                              <tr class="last even">
-                                <td>
-                                  <input type="checkbox">
-                                </td>
-                                <td>
-                                  <h5 class="product-name"><a href="#">Image3</a></h5>
-                                </td>
-                                <td><span class="cart-price"> Display Image </span></td>
-                                <td><a title="Edit item parameters" href="#configure/id/15946/" class="edit-bnt"></a></td>
-                                <td><a title="Remove item" href="#" class="remove-item"><span><span>Remove item</span></span></a></td>
-                              </tr>
-                            </tbody>
-                            <tfoot>
-                              <tr class="first last">
-                                <td colspan="7" class="a-right last">
-                                  <button title="Update Cart" value="update_qty" name="update_cart_action" type="submit" style="float:right" class="button btn-update"><span><span>Add Banner</span></span></button>
-                                </td>
-                              </tr>
-                            </tfoot>
-                          </table>
-                        </fieldset>
-                      </form>
-                    </div>
-                    <div class="clearfix"></div>
-                    <h4>Manage Static Banner</h4>
-                    <div class="table-responsive">
-                      <form method="post" action="#updatePost/">
-                        <input type="hidden" value="Vwww7itR3zQFe86m" name="form_key">
-                        <fieldset>
-                          <table id="shopping-cart-table" class="data-table">
-                            <thead>
-                              <tr class="first last">
-                                <th rowspan="1"><span class="nobr">Select</span></th>
-                                <th colspan="1" class="a-center"><span class="nobr">Image Description</span></th>
-                                <th rowspan="1" class="a-center">Image preview</th>
-                                <th colspan="2" class="a-center">Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class="first odd">
-                                <td>
-                                  <input type="checkbox">
-                                </td>
-                                <td>
-                                  <h5 class="product-name"><a href="#">Image1</a></h5>
-                                </td>
-                                <td><span class="cart-price"> Display Image </span></td>
-                                <td><a title="Edit item parameters" href="#configure/id/15945/" class="edit-bnt"></a></td>
-                                <td><a title="Remove item" href="#" class="remove-item"><span><span>Remove item</span></span></a></td>
-                              </tr>
-                              <tr class="first even">
-                                <td>
-                                  <input type="checkbox">
-                                </td>
-                                <td>
-                                  <h5 class="product-name"><a href="#">Image2</a></h5>
-                                </td>
-                                <td><span class="cart-price"> Display Image</span></td>
-                                <td><a title="Edit item parameters" href="#configure/id/15945/" class="edit-bnt"></a></td>
-                                <td><a title="Remove item" href="#" class="remove-item"><span><span>Remove item</span></span></a></td>
-                              </tr>
-                              <!-- -End Row------>
-                            </tbody>
-                            <tfoot>
-                              <tr class="first last">
-                                <td colspan="7" class="a-right last">
-                                  <button title="Update Cart" value="update_qty" name="update_cart_action" type="submit" style="float:right" class="button btn-update"><span><span>Add Banner</span></span></button>
-                                </td>
-                              </tr>
-                            </tfoot>
-                          </table>
-                        </fieldset>
-                      </form>
-                    </div>
-                    <div class="clearfix"></div>
-                    <h4>Manage News</h4>
-                    <div class="group-select">
-                      <ul>
-                        <li>
-                          <div class="customer-name">
-                            <div style="width:100%" class="input-box">
-                              <label for="billing:firstname">News Title<span class="required">*</span></label><br>
-                              <input id="title" type="text" name="title" value="" title="Title" class="input-text">
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="input-box">
-                            <label for="billing:company">News Posted By <em class="required">*</em></label><br>
-                            <input id="news" type="text" name="news" value="" title="news" class="input-text">
-                          </div>
-                          <div class="input-box">
-                            <label for="billing:company">Date <em class="required">*</em></label><br>
-                            <input id="news" type="text" name="news" value="" title="news" class="input-text">
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <label for="comment">News Content<em class="required">*</em></label>
-                            <div class="clearfix"></div>
-                            <textarea id="comment" name="comment" title="Comment" cols="5" rows="3" style="height: 120px;" class="required-entry input-text"></textarea>
-                          </div>
-                        </li>
-                        <div class="buttons-set">
-                          <button type="submit" title="Submit" class="button submit"><span> Post News </span></button>
-                        </div>
-                      </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                    <h4>Manage Events</h4><br>
-                    <!-- page start-->
-                    <div class="row mt">
-                      <aside class="col-lg-4 mt">
-                        <div id="external-events">
-                          <div class="external-event label">My Event 1</div>
-                          <div class="external-event label">My Event 2</div>
-                          <div class="external-event label">My Event 3</div>
-                          <div class="external-event label">My Event 4</div>
-                          <div class="external-event label">My Event 5</div>
-                          <div class="external-event label">My Event 6</div>
-                          <div class="external-event label">My Event 7</div>
-                          <div class="external-event label">My Event 8</div>
-                          <div class="external-event label">My Event 9</div>
-                        </div>
-                      </aside>
-                      <aside class="col-lg-8 mt">
-                        <section class="panel">
-                          <div class="panel-body">
-                            <div id="calendar" class="has-toolbar"></div>
-                          </div>
-                        </section>
-                      </aside>
-                    </div>
-                    <!-- page end-->
+                    <p>Welcome Admin, Below is your account summary. You can update your account information and view details related to your account.</p>
+                    <h4>Account settings</h4>
+                    <div class="padding--left--3per">
+                      <h5>Last Login : 28/1/2017 at 9:42:13 Am</h5>
+                      <h5>User ID : mail@gmail.com</h5>
+                      <h5> Password : *******</h5>
+                      <button title="Update Cart" value="update_qty" name="update_cart_action" type="submit" class="button btn-update"><span><span>Update</span></span></button>
+                    </div><br>
+                    <h4>Contact Details</h4>
+                    <div class="padding--left--3per">
+                      <h5>Name : First Name Last Name</h5>
+                      <h5>Email : mail@gmail.com</h5>
+                      <h5>
+                        Adress : residence address
+                        city
+                        state
+                        country
+                        pin
+                      </h5>
+                      <button title="Update Cart" value="update_qty" name="update_cart_action" type="submit" class="button btn-update"><span><span>Update</span></span></button>
+                    </div><br><br>
                   </div>
                 </div>
               </div>
@@ -574,14 +423,15 @@
     <script src="../scripts/jquery.min.js"></script>
     <script src="../scripts/jquery-ui.min.js"></script>
     <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/marque.js"></script>
     <script src="../scripts/clndr.js"></script>
     <script src="../scripts/theme.js"></script>
     <script src="../scripts/theme.init.js"></script>
     <script src="../content/masterslider/masterslider.min.js"></script>
     <script src="../scripts/jquery.flexisel.js"></script>
-    <script src="../scripts/fullcalendar/fullcalendar.min.js"></script>
-    <script src="../scripts/calendar-conf-events.js"></script>
     <script src="../scripts/common.js"></script>
-    <link rel="stylesheet" href="../scripts/fullcalendar/bootstrap-fullcalendar.css">
+    <script src="../scripts/underscore-min.js"></script>
+    <script src="../scripts/moment-2.2.1.js"></script>
+    <script src="../scripts/site.js"></script>
   </body>
 </html>

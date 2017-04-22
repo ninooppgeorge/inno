@@ -1,0 +1,104 @@
+- var showcart = 0
+doctype html
+html(lang="en")
+  include common/head
+  body
+    .body.contentmanagement
+      include common/nav
+      // This is the content area
+      // breadcrumbs
+      .breadcrumbs
+        .container
+          .row
+            ul
+              li.home
+                a(href='index.html', title='Go to Home Page') HOME
+                span  ⁄ 
+              li
+                a(href='#', title='Go to Home Page') MY ACCOUNT
+      // End breadcrumbs
+      // Two columns content
+      .main-container.col2-left-layout
+        .main.container
+          .row
+            aside.col-left.sidebar.col-sm-3(style='visibility: visible;')
+              .block.block-account
+                .block-title
+                  a(href='my_account.html')
+                    i.fa.fa-lock(style=' color: #888;')
+                    |    My Account
+                .block-content
+                  ul
+                    li.active
+                      a(href='#') Contact Details
+                    li
+                      a(href='#') Address Book
+                .block-title
+                  a(href='usermanagement.html')
+                    i.fa.fa-user(style=' color: #888;')
+                    |    User Management
+                .block-content
+                  ul
+                    li
+                      a(href='#') Manage Users
+                    li
+                      a(href='#') Manage Roles
+                    li
+                      a(href='#') Manage Permissions
+                .block-title
+                  a(href='contentmanagement.html')
+                    i.fa.fa-tasks(style=' color: #888;')
+                    |    Content Management
+                .block-content
+                  ul
+                    li
+                      a(href='#') Manage Rotating Banner
+                    li
+                      a(href='#') Manage Static Banner
+                    li
+                      a(href='#') Manage News
+                    li
+                      a(href='#') Manage Events
+                .block-title
+                  a(href='orderhistory.html')
+                    i.fa.fa-history(style=' color: #888;')
+                    |    Order History
+                .block-content
+                  ul
+                    li
+                      a(href='#') Order Status
+            section.col-main.col-sm-9(style='background: #f0f0f0; padding-top: 15px;')
+              .category-products
+                .toolbar(style='padding-top:0px')
+                  .content
+                    .page-title
+                      h2(style=' border-bottom:1px solid #f1f1f1; padding-bottom:10px; margin-bottom:10px') My account summary
+                    p
+                      | Welcome Admin, Below is your account summary. You can update your account information and view details related to your account.
+                    h4 Account settings
+                    .padding--left--3per
+                      h5 Last Login : 28/1/2017 at 9:42:13 Am
+                      h5 User ID : mail@gmail.com
+                      h5  Password : *******
+                      button.button.btn-update(title='Update Cart', value='update_qty', name='update_cart_action', type='submit')
+                        span
+                          span Update
+                    br
+                    h4 Contact Details
+                    .padding--left--3per
+                      h5 Name : First Name Last Name
+                      h5 Email : mail@gmail.com
+                      h5
+                        | Adress : residence address
+                        | city
+                        | state
+                        | country
+                        | pin
+                      button.button.btn-update(title='Update Cart', value='update_qty', name='update_cart_action', type='submit')
+                        span
+                          span Update
+                    br
+                    br
+      // This is the content area
+    include common/footer
+    include common/scripts
