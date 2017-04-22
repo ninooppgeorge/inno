@@ -1,0 +1,129 @@
+doctype html
+html(lang="en")
+  include common/head
+  body
+    .body
+      include common/nav
+      // This is the content area
+      // end breadcrumbs
+      .breadcrumbs
+        .container
+          .row
+            ul
+              li.home
+                a(href='index.html', title='Go to Home Page') Home
+                span   ⁄  
+              li
+                a(href='grid.html', title='Go to Home Page') Video
+                span   ⁄  
+              li.category13
+                strong  Television 
+      // end breadcrumbs
+      // main-container
+      section.main-container.col1-layout
+        .main.container
+          .col-main
+            .product-view
+              .product-essential
+                form#product_addtocart_form(action='#', method='post')
+                  input(name='form_key', value='6UbXroakyQlbfQzK', type='hidden')
+                  .product-img-box.col-lg-4.col-sm-4.col-xs-12
+                    img(src='../images/products-images/lg1.jpg', width='100%')
+                  .product-shop.col-lg-8.col-sm-8.col-xs-12
+                    .product-name
+                      h3 LG V20 : Audio By B&O PLAY
+                      h4 LGH990DS(SILVER)
+                    .col-md-3.brdrright
+                      h5 INSTOCK
+                      h5 Availability: 
+                      .price-block
+                        .price-box
+                          p
+                            span NorthBrool,IL  :
+                            span  Not In Stock 
+                          p
+                            span ELK Grove Village,IL :
+                            span   Not In Stock 
+                    .col-md-3.brdrright
+                      h5 ORGINAL PRICE
+                      p MSRP : $ 300.00
+                      p MAP : $ 150.00
+                    .col-md-3.brdrright
+                      h5 YOUR PRICE
+                      h4(style='border: 1px solid #ccc;padding: 10px;')  $ 165. 00
+                    .col-md-3(style='padding-right:0px')
+                      .add-to-box
+                        .add-to-cart
+                          label.algn(for='qty', style='padding-right:5px;') QTY:
+                          label(style='padding-right:10px;')
+                            input#qty.input-text.qty(type='text', title='Qty', value='1', maxlength='2', name='qty', style='width: 40px;height: 40px;padding: 10px;', onkeypress='return validate(event)')
+                          button.button.btn-cart(onclick='productAddToCartForm.submit(this)', title='Add to Cart', type='button')
+                            span(style='font-size: 1.1em;')
+                              i.fa.fa-shopping-cart
+                              |  Add to Cart
+      section(style='background:#f1f1f1; margin-top:40px; margin-bottom:40px;padding:20px')
+        .container
+          p Additional Photos (Click on the image to enlarge it.)
+          .col-md-1.col-sm-3.col-xs-3
+            #pageone.ui-content(data-role='main')
+              a(href='#myPopup', data-rel='popup', data-position-to='window')
+                img(src='../images/products-images-small/lg2.jpg', alt='Skaret View', style='width:100%;')
+          .col-md-1.col-sm-3.col-xs-3
+            #pageone.ui-content(data-role='main')
+              a(href='#myPopup', data-rel='popup', data-position-to='window')
+                img(src='../images/products-images-small/lg3.jpg', alt='Skaret View', style='width:100%;')
+          .col-md-1.col-sm-3.col-xs-3
+            #pageone.ui-content(data-role='main')
+              a(href='#myPopup', data-rel='popup', data-position-to='window')
+                img(src='../images/products-images-small/lg2.jpg', alt='Skaret View', style='width:100%;')
+      // -detail tab------
+      section.main-container.col1-layout(style='margin-bottom:60px;')
+        .main.container
+          .col-main
+            .responsive-tabs
+              h2 Product Description
+              .std
+                ul
+                  li
+                    p
+                      | B&O PLAY Collaboration-Hi-Fi Listening ExperienceIncredibly durable-805G Military CertificationWide-Angle Front & Rear Cameras to Get the Bigger PictureRecord Smoother, Clearer Videos Even on the Move14.47cm(5.7) Quad HD IPS
+                      | Display4G LTE with VoLTE and VoWi-FI.
+              // -tab1 end--------
+              h2 Specification
+              .std
+                ul
+                  li
+                    p
+                      | Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend
+                      | laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere
+                      | at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.
+              // -tab2 end--------
+              h2 Support
+              .std
+                ul
+                  li
+                    p
+                      strong  Comfortable 
+                      span
+                        | preshrunk shirts. Highest Quality Printing.  6.1 oz. 100% preshrunk heavyweight cotton Shoulder-to-shoulder taping Double-needle sleeves and bottom hem
+                        | Lorem Ipsumis
+                        | simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        | has been the industry's standard dummy text ever since the 1500s, when
+                        | an unknown printer took a galley of type and scrambled it to make a type
+                        | specimen book. It has survived not only five centuries, but also the
+                        | leap into electronic typesetting, remaining essentially unchanged. It
+                        | was popularised in the 1960s with the release of Letraset sheets
+                        | containing Lorem Ipsum passages, and more recently with desktop
+                        | publishing software like Aldus PageMaker including versions of Lorem
+                        | Ipsum.
+      // -detail tab ends------
+      // End main-container
+      // This is the content area
+    include common/footer
+    include common/scripts
+    link(rel='stylesheet', href='../content/responsive-tabs.css')
+    script(src='../scripts/responsiveTabs.js')
+    script(type='text/javascript').
+      $(document).ready(function(){
+      RESPONSIVEUI.responsiveTabs();
+      });

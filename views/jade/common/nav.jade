@@ -6,18 +6,10 @@ header.header-container
         .col-xs-6
           .toplinks
             .links
-              div
-                a(title='Login', href='login.html')
-                  span.hidden-xs
-                    font(color='#c13333') LOGIN
-              |  |
-              div
-                a(title='Login', href='login.html')
-                  font(color='#c13333') REGISTER
-              .no
-                a(title='Checkout', href='contact.html')
-                  i.fa.fa-phone
-                  |   (847) 656 8900
+              if showavatar == 1
+                include avatar
+              else
+                include logintop
   .header.container
     .row
       .col-lg-3.col-sm-3.col-md-2
