@@ -1,0 +1,451 @@
+header.header-container
+  .header-top
+    .container
+      .row
+        .col-xs-6
+        .col-xs-6
+          .toplinks
+            .links
+              div
+                a(title='Login', href='login.html')
+                  span.hidden-xs
+                    font(color='#c13333') LOGIN
+              |  |
+              div
+                a(title='Login', href='login.html')
+                  font(color='#c13333') REGISTER
+              .no
+                a(title='Checkout', href='contact.html')
+                  i.fa.fa-phone
+                  |   (847) 656 8900
+  .header.container
+    .row
+      .col-lg-3.col-sm-3.col-md-2
+        // Header Logo
+        a.logo(title='Goced', href='index.html')
+          img(alt='Goced', src='../images/logo.png', width='100%')
+        // End Header Logo
+      .col-lg-7.col-sm-6.col-md-8
+        // Search-col
+        .search-box
+          form#search_mini_form(action='', method='POST', name='Categories')
+            input#search(type='text', placeholder='Search by Products, SKU or Keywords', value='', maxlength='70', name='search')
+            select.cate-dropdown.hidden-xs(name='category_id')
+              option(value='0') All Categories
+              option(value='36') Camera
+              option(value='37') Electronics
+              option(value='42')    Cell Phones
+              option(value='43')    Cameras
+              option(value='44')    Laptops
+              option(value='45')    Hard Drives
+              option(value='46')    Monitors
+              option(value='47')    Mouse
+              option(value='48')    Digital Cameras
+              option(value='38') Desktops
+              option(value='39') Computer Parts
+              option(value='40') Televisions
+              option(value='41') Featured
+            button#submit-button.search-btn-bg
+              span GO
+        // End Search-col
+      // Top Cart
+      .col-lg-2.col-sm-3.col-md-2
+        .menu-cart1
+          .top-cart-contain
+            .mini-cart
+              .basket.dropdown-toggle(data-toggle='dropdown', data-hover='dropdown')
+                a(href='#')
+                  i.glyphicon.glyphicon-shopping-cart(style='color:#666')
+                  .cart-box
+                    span.title cart
+                    span#cart-total 0 item 
+              div
+            #ajaxconfig_info
+              a(href='#/')
+              input(value='', type='hidden')
+              input#enable_module(value='1', type='hidden')
+              input.effect_to_cart(value='1', type='hidden')
+              input.title_shopping_cart(value='Go to shopping cart', type='hidden')
+      // End Top Cart
+
+nav
+  .container
+    .nav-inner
+      ul
+        li
+          .logo-small
+            a.logo(title='Goced', href='index.html')
+              img(alt='Goced', src='../images/logo.png')
+      // mobile-menu
+      #mobile-menu.hidden-desktop(style='float:none')
+        ul.navmenu
+          li
+            .menutop
+              button#btnmain.btn.btn-responsive-nav.btn-inverse(data-toggle='collapse', data-target='.nav-main-collapse')
+                i#btnlist.fa.fa-bars(style='font-size:20px;visibility:visible')
+                i#btnclose.fa.fa-close(style='font-size:20px; position: absolute;left: 12px; top:10px; visibility:hidden')
+              h2 Menu
+            #header.navbar-collapse.nav-main-collapse.collapse
+              .nav.nav-main.mega-menu(style='height:auto')
+                ul#mainMenu.nav.nav-pills.nav-main
+                  li.dropdown.active
+                    a.dropdown-toggle(href='#')
+                      | PRODUCT
+                      i.fa.fa-angle-down
+                    ul.dropdown-menu
+                      li.dropdown-submenu
+                        a(href='#') Audio
+                        ul.dropdown-menu
+                          li
+                            a(href='product.html')
+                              span Amplifiers
+                          li
+                            a(href='product.html')
+                              span Receivers
+                          li
+                            a(href='product.html')
+                              span Speakers
+                          li
+                            a(href='product.html')
+                              span HeadPhones
+                      li.dropdown-submenu
+                        a(href='#') Cables
+                        ul.dropdown-menu
+                          li
+                            a(href='product.html')
+                              span HDMI Cables
+                          li
+                            a(href='product.html')
+                              span VGA Cables
+                          li
+                            a(href='product.html')
+                              span Fibre Optics
+                          li
+                            a(href='product.html')
+                              span Bulk Wires & Cables
+                          li
+                            a(href='product.html')
+                              span Component Cables
+                          li
+                            a(href='product.html')
+                              span Connectors
+                      li.dropdown-submenu
+                        a(href='#') Computer
+                        ul.dropdown-menu
+                          li
+                            a(href='product.html')
+                              span Tablets
+                          li
+                            a(href='product.html')
+                              span Laptop
+                      li.dropdown-submenu
+                        a(href='#') Mobiles
+                        ul.dropdown-menu
+                          li
+                            a(href='product.html')
+                              span Mobile Video
+                          li
+                            a(href='product.html')
+                              span Mobile Audio
+                          li
+                            a(href='product.html')
+                              span Mobile Speakers
+                          li
+                            a(href='product.html')
+                              span Cellphone
+                      li.dropdown-submenu
+                        a(href='#') Mounts
+                        ul.dropdown-menu
+                          li
+                            a(href='product.html')
+                              span Furniture
+                          li
+                            a(href='product.html')
+                              span Wall Mounts
+                          li
+                            a(href='product.html')
+                              span Celling Mounts
+                          li
+                            a(href='product.html')
+                              span Mounting Brackets
+                          li
+                            a(href='product.html')
+                              span Rack / Rack Accessories
+                      li.dropdown-submenu
+                        a(href='#') Security
+                        ul.dropdown-menu
+                          li
+                            a(href='product.html')
+                              span DVR / NVR
+                          li
+                            a(href='product.html')
+                              span Cameras
+                          li
+                            a(href='product.html')
+                              span Panels
+                          li
+                            a(href='product.html')
+                              span Sensors
+                          li
+                            a(href='product.html')
+                              span Accessories
+                          li
+                            a(href='product.html')
+                              span Power Supplies
+                      li.dropdown-submenu
+                        a(href='#') Custom I R
+                        ul.dropdown-menu
+                          li
+                            a(href='product.html')
+                              span Remotes
+                          li
+                            a(href='product.html')
+                              span Tools
+                          li
+                            a(href='product.html')
+                              span Networking
+                          li
+                            a(href='product.html')
+                              span Pre-Wire / Rough-In
+                          li
+                            a(href='product.html')
+                              span HDMI Extenders
+                          li
+                            a(href='product.html')
+                              span Matrix Switches
+                          li
+                            a(href='product.html')
+                              span Audio / Video Baluns, Scalers & Coverters
+                          li
+                            a(href='product.html')
+                              span Splitters
+                          li
+                            a(href='product.html')
+                              span IR
+                  li.dropdown
+                    a.dropdown-toggle(href='#')
+                      | CONSUMER
+                      i.fa.fa-angle-down
+                    ul.dropdown-menu
+                      li
+                        a(href='#') Menu1
+                      li
+                        a(href='#') Menu2
+                      li
+                        a(href='#') Menu3
+                  li.dropdown
+                    a.dropdown-toggle(href='#')
+                      | COMMERCIAL
+                      i.fa.fa-angle-down
+                    ul.dropdown-menu
+                      li
+                        a(href='#') menu1
+                        ul.dropdown-menu
+                          li
+                            a(href='#')
+                              span submenu1
+                          li
+                            a(href='#')
+                              span submenu2
+                      li
+                        a(href='#') menu2
+                  li.dropdown
+                    a.dropdown-toggle(href='#')
+                      | BRAND
+                      i.fa.fa-angle-down
+                    ul.dropdown-menu
+                      li
+                        a(href='brand.html') Brand Name
+                      li
+                        a(href='brandname.html') Brand Category
+      .menu-cart
+        .top-cart-contain
+          .mini-cart
+            .basket.dropdown-toggle(data-toggle='dropdown', data-hover='dropdown')
+              a(href='#')
+                i.glyphicon.glyphicon-shopping-cart(style='color:#666')
+                .cart-box
+                  span.title cart
+                  span#cart-total 0 item 
+            div
+          // navmenu
+      // End mobile-menu
+      ul#nav
+        li#nav-home.level0.parent.drop-menu(style='border:none')
+          a(href='#')
+            span PRODUCT
+          ul.level1
+            li.level1.first.parent
+              a(href='#', style='border:none')
+                span Audio
+              ul.level1.display--none
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Amplifiers
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Receivers
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Speakers
+                li.level1.parent
+                  a(href='product.html')
+                    span HeadPhones
+            li.level1.first.parent
+              a(href='#')
+                span Cables
+              ul.level1.display--none
+                li.level1.first.parent
+                  a(href='product.html')
+                    span HDMI Cables
+                li.level1.first.parent
+                  a(href='product.html')
+                    span VGA Cables
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Fibre Optics
+                li.level1.parent
+                  a(href='product.html')
+                    span Bulk Wires & Cables
+                li.level1.parent
+                  a(href='product.html')
+                    span Component Cables
+                li.level1.parent
+                  a(href='product.html')
+                    span Connectors
+            li.level1.parent
+              a(href='#')
+                span Computer
+              ul.level1.display--none
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Tablets
+                li.level1.first.parent
+                  a(href='product.html')
+                    span laptops
+            li.level1.parent
+              a(href='#')
+                span Mobiles
+              ul.level1.display--none
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Mobile Video
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Mobile Audio
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Mobile Speakers
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Cellphone
+            li.level1.parent
+              a(href='#')
+                span Mounts
+              ul.level1.display--none
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Furniture
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Wall Mounts
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Celling Mounts
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Mounting Brackets
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Rack / Rack Accessories
+            li.level1.parent
+              a(href='#')
+                span Security
+              ul.level1.display--none
+                li.level1.first.parent
+                  a(href='product.html')
+                    span DVR / NVR
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Cameras
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Panels
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Sensors
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Accessories
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Power Supplies
+            li.level1.parent
+              a(href='#')
+                span Custom I R
+              ul.level1.display--none
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Remotes
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Tools
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Networking
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Pre-Wire / Rough-In
+                li.level1.first.parent
+                  a(href='product.html')
+                    span HDMI Extenders
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Matrix Switches
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Audio / Video Baluns, Scalers & Coverters
+                li.level1.first.parent
+                  a(href='product.html')
+                    span Splitters
+                li.level1.first.parent
+                  a(href='product.html')
+                    span IR
+        li#nav-home.level0.parent.drop-menu
+          a.level-top(href='#')
+            span CONSUMER
+          ul.level1
+            li.level1.first.parent
+              a(href='#')
+                span menu2
+              ul.level1.display--none
+                li.level1.first.parent
+                  a(href='#')
+                    span submenu1
+                li.level1.first.parent
+                  a(href='#')
+                    span submenu2
+        li#nav-home.level0.parent.drop-menu
+          a.level-top(href='#')
+            span COMMERCIAL
+          ul.level1
+            li.level1.first.parent
+              a(href='#')
+                span menu2
+              ul.level1.display--none
+                li.level1.first.parent
+                  a(href='#')
+                    span submenu1
+                li.level1.first.parent
+                  a(href='#')
+                    span submenu2
+        li#nav-home.level0.parent.drop-menu
+          a.level-top(href='#')
+            span BRAND
+          ul.level1
+            li.level1.first.parent
+              a(href='brand.html')
+                span Brand Name
+            li.level1.first.parent
+              a(href='brandname.html')
+                span Brand Category

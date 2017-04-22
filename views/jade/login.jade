@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+  include common/head
+  body
+    .body
+      include common/nav
+      // This is the content area
+      .clearfix
+      section.main-container.col1-layout
+        .main.container
+          .account-login
+            .page-title
+              h2 Login or Create an Account
+            fieldset.col2-set
+              legend Login or Create an Account
+              .col-2.registered-users
+                strong Registered Customers
+                .content
+                  p If you have an account with us, please log in.
+                  ul.form-list
+                    li
+                      label(for='email')
+                        | Email Address 
+                        span.required *
+                      br
+                      input#email.input-text.required-entry(type='text', title='Email Address', value='', name='login[username]')
+                    li
+                      label(for='pass')
+                        | Password 
+                        span.required *
+                      br
+                      input#pass.input-text.required-entry.validate-password(type='password', title='Password', name='login[password]')
+                  p.required * Required Fields
+                  .buttons-set
+                    button#send2.button.login(name='send', type='submit')
+                      span Login
+                    a.forgot-word(href='') Forgot Your Password?
+              .col-1.new-users
+                strong New Customers
+                .content
+                  p
+                    | By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.
+                  .buttons-set
+                    button.button.create-account(onclick='', type='button')
+                      span Create an Account
+      // This is the content area
+
+    include common/footer
+    include common/scripts
