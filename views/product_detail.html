@@ -1,522 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Goced</title>
-
-
-
-  <link rel="stylesheet" href="../content/nin.css"/>
-  <link rel="stylesheet" href="../content/theme.css"/>
-  <link rel="stylesheet" href="../content/bootstrap.min.css"/>
-  <link rel="stylesheet" href="../content/style.css"/>
-  <link rel="stylesheet" href="../content/style2.css"/>
-  <link rel="stylesheet" href="../content/clndr.css"/>
-  <link rel="stylesheet" href="../content/fontawesome/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="../content/masterslider/style/masterslider.css"/>
-  <link rel="stylesheet" href="../content/responsive-tabs.css"/>
-  <link rel="stylesheet" href="../content/brand.css"/>
-
-</head>
-<body>
-  <div class="body">
-
-    <header class="header-container">
-      <div class="header-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-6">
-            </div>
-            <div class="col-xs-6">
-              <div class="toplinks">
-                <div class="links">
-                  <div class=""><a title="Login" href="login.html"><span  class="hidden-xs"><font color="#c13333">LOGIN</font></span></a></div> | <div class=""><a title="Login" href="login.html"><font color="#c13333">REGISTER</font></a></div>
-                  <div class="no"><a title="Checkout" href="contact.html"><i class="fa fa-phone"></i> &nbsp;(847) 656 8900</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-3 col-md-2">
-            <!-- Header Logo -->
-            <a class="logo" title="Goced" href="index.html"><img alt="Goced" src="../images/logo.png" width="100%"></a>
-            <!-- End Header Logo -->
-          </div>
-          <div class="col-lg-7 col-sm-6 col-md-8">
-            <!-- Search-col -->
-            <div class="search-box">
-              <form action="" method="POST" id="search_mini_form" name="Categories">
-                <input type="text" placeholder="Search by Products, SKU or Keywords" value="" maxlength="70" class="" name="search" id="search">
-                <select name="category_id" class="cate-dropdown hidden-xs">
-                  <option value="0">All Categories</option>
-                  <option value="36">Camera</option>
-                  <option value="37">Electronics</option>
-                  <option value="42">&nbsp;&nbsp;&nbsp;Cell Phones</option>
-                  <option value="43">&nbsp;&nbsp;&nbsp;Cameras</option>
-                  <option value="44">&nbsp;&nbsp;&nbsp;Laptops</option>
-                  <option value="45">&nbsp;&nbsp;&nbsp;Hard Drives</option>
-                  <option value="46">&nbsp;&nbsp;&nbsp;Monitors</option>
-                  <option value="47">&nbsp;&nbsp;&nbsp;Mouse</option>
-                  <option value="48">&nbsp;&nbsp;&nbsp;Digital Cameras</option>
-                  <option value="38">Desktops</option>
-                  <option value="39">Computer Parts</option>
-                  <option value="40">Televisions</option>
-                  <option value="41">Featured</option>
-                </select>
-                <button id="submit-button" class="search-btn-bg"><span>GO</span></button>
-              </form>
-            </div>
-            <!-- End Search-col -->
-          </div>
-          <!-- Top Cart -->
-          <div class="col-lg-2 col-sm-3 col-md-2">
-            <div class="menu-cart1">
-              <div class="top-cart-contain">
-                <div class="mini-cart">
-                  <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle"> <a href="#"> <i class="glyphicon glyphicon-shopping-cart" style="color:#666"></i>
-                    <div class="cart-box"><span class="title">cart</span><span id="cart-total">0 item </span></div>
-                    </a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Goced</title>
+    <!-- all the stylesheets-->
+    <link rel="stylesheet" href="../content/nin.css">
+    <link rel="stylesheet" href="../content/theme.css">
+    <link rel="stylesheet" href="../content/bootstrap.min.css">
+    <link rel="stylesheet" href="../content/style.css">
+    <link rel="stylesheet" href="../content/style2.css">
+    <link rel="stylesheet" href="../content/clndr.css">
+    <link rel="stylesheet" href="../content/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../content/masterslider/style/masterslider.css">
+    <link rel="stylesheet" href="../content/brand.css">
+  </head>
+  <body>
+    <div class="body">
+      <header class="header-container">
+        <div class="header-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6"></div>
+              <div class="col-xs-6">
+                <div class="toplinks">
+                  <div class="links">
+                    <div><a title="Login" href="login.html"><span class="hidden-xs"><font color="#c13333">LOGIN</font></span></a></div> |
+                    <div><a title="Login" href="login.html"><font color="#c13333">REGISTER</font></a></div>
+                    <div class="no"><a title="Checkout" href="contact.html"><i class="fa fa-phone"></i>  (847) 656 8900</a></div>
                   </div>
-                  <div></div>
-                </div>
-                <div id="ajaxconfig_info"> <a href="#/"></a>
-                  <input value="" type="hidden">
-                  <input id="enable_module" value="1" type="hidden">
-                  <input class="effect_to_cart" value="1" type="hidden">
-                  <input class="title_shopping_cart" value="Go to shopping cart" type="hidden">
                 </div>
               </div>
             </div>
           </div>
-      <!-- End Top Cart -->
         </div>
-      </div>
-    </header>
-
-    <nav>
-      <div class="container">
-        <div class="nav-inner">
-          <ul>
-            <li>
-              <div class="logo-small"> <a class="logo" title="Goced" href="index.html"><img alt="Goced" src="../images/logo.png"></a> </div>
-            </li>
-          </ul>
-          <!-- mobile-menu -->
-          <div class="hidden-desktop" id="mobile-menu" style="float:none">
-            <ul class="navmenu">
-              <li>
-                <div class="menutop">
-                  <button class="btn btn-responsive-nav btn-inverse" id="btnmain" data-toggle="collapse" data-target=".nav-main-collapse">
-    						    <i class="fa fa-bars" id="btnlist" style="font-size:20px;visibility:visible"></i>
-                    <i class="fa fa-close"  id="btnclose" style="font-size:20px; position: absolute;left: 12px; top:10px; visibility:hidden"></i>
-    					    </button>
-                  <h2>Menu</h2>
+        <div class="header container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-3 col-md-2">
+              <!-- Header Logo--><a title="Goced" href="index.html" class="logo"><img alt="Goced" src="../images/logo.png" width="100%"></a>
+              <!-- End Header Logo-->
+            </div>
+            <div class="col-lg-7 col-sm-6 col-md-8">
+              <!-- Search-col-->
+              <div class="search-box">
+                <form id="search_mini_form" action="" method="POST" name="Categories">
+                  <input id="search" type="text" placeholder="Search by Products, SKU or Keywords" value="" maxlength="70" name="search">
+                  <select name="category_id" class="cate-dropdown hidden-xs">
+                    <option value="0">All Categories</option>
+                    <option value="36">Camera</option>
+                    <option value="37">Electronics</option>
+                    <option value="42">   Cell Phones</option>
+                    <option value="43">   Cameras</option>
+                    <option value="44">   Laptops</option>
+                    <option value="45">   Hard Drives</option>
+                    <option value="46">   Monitors</option>
+                    <option value="47">   Mouse</option>
+                    <option value="48">   Digital Cameras</option>
+                    <option value="38">Desktops</option>
+                    <option value="39">Computer Parts</option>
+                    <option value="40">Televisions</option>
+                    <option value="41">Featured</option>
+                  </select>
+                  <button id="submit-button" class="search-btn-bg"><span>GO</span></button>
+                </form>
+              </div>
+              <!-- End Search-col-->
+            </div>
+            <!-- Top Cart-->
+            <div class="col-lg-2 col-sm-3 col-md-2">
+              <div class="menu-cart1">
+                <div class="top-cart-contain">
+                  <div class="mini-cart">
+                    <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle"><a href="#"><i style="color:#666" class="glyphicon glyphicon-shopping-cart"></i>
+                        <div class="cart-box"><span class="title">cart</span><span id="cart-total">0 item </span></div></a></div>
+                    <div></div>
+                  </div>
+                  <div id="ajaxconfig_info"><a href="#/"></a>
+                    <input value="" type="hidden">
+                    <input id="enable_module" value="1" type="hidden">
+                    <input value="1" type="hidden" class="effect_to_cart">
+                    <input value="Go to shopping cart" type="hidden" class="title_shopping_cart">
+                  </div>
                 </div>
-                <div class="navbar-collapse nav-main-collapse collapse" id="header">
-                  <div class="nav nav-main mega-menu" style="height:auto">
-    							  <ul class="nav nav-pills nav-main" id="mainMenu">
-    								  <li class="dropdown active">
-    									  <a class="dropdown-toggle" href="#">
-    										PRODUCT
-    										<i class="fa fa-angle-down"></i>
-    									  </a>
-    									  <ul class="dropdown-menu">
-    										  <li class="dropdown-submenu"><a href="#">Audio</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="product.html"><span>Amplifiers</span></a> </li>
-                              <li><a href="product.html"><span>Receivers</span></a></li>
-                              <li><a href="product.html"><span>Speakers</span></a></li>
-                              <li><a href="product.html"><span>HeadPhones</span></a> </li>
-    											  </ul>
-                          </li>
-                          <li class="dropdown-submenu"><a href="#">Cables</a>
-                            <ul class="dropdown-menu">
-      												<li><a href="product.html"><span>HDMI Cables</span></a> </li>
-                              <li><a href="product.html"><span>VGA Cables</span></a></li>
-                              <li><a href="product.html"><span>Fibre Optics</span></a></li>
-                              <li><a href="product.html"><span>Bulk Wires & Cables</span></a> </li>
-                              <li><a href="product.html"><span>Component Cables</span></a> </li>
-                              <li><a href="product.html"><span>Connectors</span></a> </li>
-                 						</ul>
-                          </li>
-                          <li class="dropdown-submenu"><a href="#">Computer</a>
-                            <ul class="dropdown-menu">
-    												  <li><a href="product.html"><span>Tablets</span></a> </li>
-                              <li><a href="product.html"><span>Laptop</span></a></li>
-               							</ul>
-                          </li>
-                          <li class="dropdown-submenu"><a href="#">Mobiles</a>
-                            <ul class="dropdown-menu">
-    												  <li><a href="product.html"><span>Mobile Video</span></a> </li>
-                              <li><a href="product.html"><span>Mobile Audio</span></a></li>
-                              <li><a href="product.html"><span>Mobile Speakers</span></a></li>
-                              <li><a href="product.html"><span>Cellphone</span></a></li>
-                            </ul>
-                          </li>
-    										  <li class="dropdown-submenu"><a href="#">Mounts</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="product.html"><span>Furniture</span></a> </li>
-                              <li><a href="product.html"><span>Wall Mounts</span></a></li>
-                              <li><a href="product.html"><span>Celling Mounts</span></a></li>
-                              <li><a href="product.html"><span>Mounting Brackets</span></a></li>
-                              <li><a href="product.html"><span>Rack / Rack Accessories</span></a></li>
-                            </ul>
-                  				</li>
-                          <li class="dropdown-submenu"><a href="#">Security</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="product.html"><span>DVR / NVR</span></a> </li>
-                              <li><a href="product.html"><span>Cameras</span></a></li>
-                              <li><a href="product.html"><span>Panels</span></a></li>
-                              <li><a href="product.html"><span>Sensors</span></a></li>
-                              <li><a href="product.html"><span>Accessories</span></a></li>
-                              <li><a href="product.html"><span>Power Supplies</span></a></li>
-                            </ul>
-                          </li>
-                          <li  class="dropdown-submenu"><a href="#">Custom I R</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="product.html"><span>Remotes</span></a> </li>
-                              <li><a href="product.html"><span>Tools</span></a></li>
-                              <li><a href="product.html"><span>Networking</span></a></li>
-                              <li><a href="product.html"><span>Pre-Wire / Rough-In</span></a></li>
-                              <li><a href="product.html"><span>HDMI Extenders</span></a></li>
-                              <li><a href="product.html"><span>Matrix Switches</span></a></li>
-                              <li><a href="product.html"><span>Audio / Video Baluns, Scalers & Coverters</span></a></li>
-                              <li><a href="product.html"><span>Splitters</span></a></li>
-                              <li><a href="product.html"><span>IR</span></a></li>
-                            </ul>
-                          </li>
-    									  </ul>
-    								  </li>
-    								  <li class="dropdown">
-      									<a class="dropdown-toggle" href="#">
-      										CONSUMER
-      										<i class="fa fa-angle-down"></i>
-      									</a>
-      									<ul class="dropdown-menu">
-      										<li><a href="#">Menu1</a></li>
-      										<li><a href="#">Menu2</a></li>
-      										<li><a href="#">Menu3</a></li>
-      									</ul>
-    								  </li>
-                      <li class="dropdown">
-      									<a class="dropdown-toggle" href="#">
-      										COMMERCIAL
-      										<i class="fa fa-angle-down"></i>
-      									</a>
-      									<ul class="dropdown-menu">
-      										<li><a href="#">menu1</a>
-                          	<ul class="dropdown-menu">
-                                <li><a href="#"><span>submenu1</span></a> </li>
-                                <li><a href="#"><span>submenu2</span></a></li>
-                            </ul>
-                          </li>
-      										<li><a href="#">menu2</a></li>
-      									</ul>
-    								  </li>
-      								<li class="dropdown">
-      									<a class="dropdown-toggle" href="#">
-      										BRAND
-      										<i class="fa fa-angle-down"></i>
-      									</a>
-      									<ul class="dropdown-menu">
-      										<li><a href="brand.html">Brand Name</a></li>
-      										<li><a href="brandname.html">Brand Category</a></li>
-      									</ul>
-      								</li>
-    							  </ul>
-    						  </div>
-    					  </div>
+              </div>
+            </div>
+            <!-- End Top Cart-->
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div class="container">
+          <div class="nav-inner">
+            <ul>
+              <li>
+                <div class="logo-small"><a title="Goced" href="index.html" class="logo"><img alt="Goced" src="../images/logo.png"></a></div>
               </li>
             </ul>
-    			</div>
-          <div class="menu-cart">
-            <div class="top-cart-contain">
-              <div class="mini-cart">
-                <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle">
-                  <a href="#"> <i class="glyphicon glyphicon-shopping-cart" style="color:#666"></i>
-                    <div class="cart-box"><span class="title">cart</span><span id="cart-total">0 item </span></div>
-                  </a>
-                </div>
-                <div></div>
-              </div>
-              <!--navmenu-->
+            <!-- mobile-menu-->
+            <div id="mobile-menu" style="float:none" class="hidden-desktop">
+              <ul class="navmenu">
+                <li>
+                  <div class="menutop">
+                    <button id="btnmain" data-toggle="collapse" data-target=".nav-main-collapse" class="btn btn-responsive-nav btn-inverse"><i id="btnlist" style="font-size:20px;visibility:visible" class="fa fa-bars"></i><i id="btnclose" style="font-size:20px; position: absolute;left: 12px; top:10px; visibility:hidden" class="fa fa-close"></i></button>
+                    <h2>Menu</h2>
+                  </div>
+                  <div id="header" class="navbar-collapse nav-main-collapse collapse">
+                    <div style="height:auto" class="nav nav-main mega-menu">
+                      <ul id="mainMenu" class="nav nav-pills nav-main">
+                        <li class="dropdown active"><a href="#" class="dropdown-toggle">PRODUCT<i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"><a href="#">Audio</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="product.html"><span>Amplifiers</span></a></li>
+                                <li><a href="product.html"><span>Receivers</span></a></li>
+                                <li><a href="product.html"><span>Speakers</span></a></li>
+                                <li><a href="product.html"><span>HeadPhones</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="#">Cables</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="product.html"><span>HDMI Cables</span></a></li>
+                                <li><a href="product.html"><span>VGA Cables</span></a></li>
+                                <li><a href="product.html"><span>Fibre Optics</span></a></li>
+                                <li><a href="product.html"><span>Bulk Wires & Cables</span></a></li>
+                                <li><a href="product.html"><span>Component Cables</span></a></li>
+                                <li><a href="product.html"><span>Connectors</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="#">Computer</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="product.html"><span>Tablets</span></a></li>
+                                <li><a href="product.html"><span>Laptop</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="#">Mobiles</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="product.html"><span>Mobile Video</span></a></li>
+                                <li><a href="product.html"><span>Mobile Audio</span></a></li>
+                                <li><a href="product.html"><span>Mobile Speakers</span></a></li>
+                                <li><a href="product.html"><span>Cellphone</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="#">Mounts</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="product.html"><span>Furniture</span></a></li>
+                                <li><a href="product.html"><span>Wall Mounts</span></a></li>
+                                <li><a href="product.html"><span>Celling Mounts</span></a></li>
+                                <li><a href="product.html"><span>Mounting Brackets</span></a></li>
+                                <li><a href="product.html"><span>Rack / Rack Accessories</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="#">Security</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="product.html"><span>DVR / NVR</span></a></li>
+                                <li><a href="product.html"><span>Cameras</span></a></li>
+                                <li><a href="product.html"><span>Panels</span></a></li>
+                                <li><a href="product.html"><span>Sensors</span></a></li>
+                                <li><a href="product.html"><span>Accessories</span></a></li>
+                                <li><a href="product.html"><span>Power Supplies</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="#">Custom I R</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="product.html"><span>Remotes</span></a></li>
+                                <li><a href="product.html"><span>Tools</span></a></li>
+                                <li><a href="product.html"><span>Networking</span></a></li>
+                                <li><a href="product.html"><span>Pre-Wire / Rough-In</span></a></li>
+                                <li><a href="product.html"><span>HDMI Extenders</span></a></li>
+                                <li><a href="product.html"><span>Matrix Switches</span></a></li>
+                                <li><a href="product.html"><span>Audio / Video Baluns, Scalers & Coverters</span></a></li>
+                                <li><a href="product.html"><span>Splitters</span></a></li>
+                                <li><a href="product.html"><span>IR</span></a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle">CONSUMER<i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Menu1</a></li>
+                            <li><a href="#">Menu2</a></li>
+                            <li><a href="#">Menu3</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle">COMMERCIAL<i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">menu1</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#"><span>submenu1</span></a></li>
+                                <li><a href="#"><span>submenu2</span></a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">menu2</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle">BRAND<i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="brand.html">Brand Name</a></li>
+                            <li><a href="brandname.html">Brand Category</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+            <div class="menu-cart">
+              <div class="top-cart-contain">
+                <div class="mini-cart">
+                  <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle"><a href="#"><i style="color:#666" class="glyphicon glyphicon-shopping-cart"></i>
+                      <div class="cart-box"><span class="title">cart</span><span id="cart-total">0 item </span></div></a></div>
+                  <div></div>
+                </div>
+                <!-- navmenu-->
+              </div>
+            </div>
+            <!-- End mobile-menu-->
+            <ul id="nav">
+              <li id="nav-home" style="border:none" class="level0 parent drop-menu"><a href="#"><span>PRODUCT</span></a>
+                <ul class="level1">
+                  <li class="level1 first parent"><a href="#" style="border:none"><span>Audio</span></a>
+                    <ul class="level1 display--none">
+                      <li class="level1 first parent"><a href="product.html"><span>Amplifiers</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Receivers</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Speakers</span></a></li>
+                      <li class="level1 parent"><a href="product.html"><span>HeadPhones</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="level1 first parent"><a href="#"><span>Cables</span></a>
+                    <ul class="level1 display--none">
+                      <li class="level1 first parent"><a href="product.html"><span>HDMI Cables</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>VGA Cables</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Fibre Optics</span></a></li>
+                      <li class="level1 parent"><a href="product.html"><span>Bulk Wires & Cables</span></a></li>
+                      <li class="level1 parent"><a href="product.html"><span>Component Cables</span></a></li>
+                      <li class="level1 parent"><a href="product.html"><span>Connectors</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="level1 parent"><a href="#"><span>Computer</span></a>
+                    <ul class="level1 display--none">
+                      <li class="level1 first parent"><a href="product.html"><span>Tablets</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>laptops</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="level1 parent"><a href="#"><span>Mobiles</span></a>
+                    <ul class="level1 display--none">
+                      <li class="level1 first parent"><a href="product.html"><span>Mobile Video</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Mobile Audio</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Mobile Speakers</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Cellphone</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="level1 parent"><a href="#"><span>Mounts</span></a>
+                    <ul class="level1 display--none">
+                      <li class="level1 first parent"><a href="product.html"><span>Furniture</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Wall Mounts</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Celling Mounts</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Mounting Brackets</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Rack / Rack Accessories</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="level1 parent"><a href="#"><span>Security</span></a>
+                    <ul class="level1 display--none">
+                      <li class="level1 first parent"><a href="product.html"><span>DVR / NVR</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Cameras</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Panels</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Sensors</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Accessories</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Power Supplies</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="level1 parent"><a href="#"><span>Custom I R</span></a>
+                    <ul class="level1 display--none">
+                      <li class="level1 first parent"><a href="product.html"><span>Remotes</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Tools</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Networking</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Pre-Wire / Rough-In</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>HDMI Extenders</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Matrix Switches</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Audio / Video Baluns, Scalers & Coverters</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>Splitters</span></a></li>
+                      <li class="level1 first parent"><a href="product.html"><span>IR</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li id="nav-home" class="level0 parent drop-menu"><a href="#" class="level-top"><span>CONSUMER</span></a>
+                <ul class="level1">
+                  <li class="level1 first parent"><a href="#"><span>menu2</span></a>
+                    <ul class="level1 display--none">
+                      <li class="level1 first parent"><a href="#"><span>submenu1</span></a></li>
+                      <li class="level1 first parent"><a href="#"><span>submenu2</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li id="nav-home" class="level0 parent drop-menu"><a href="#" class="level-top"><span>COMMERCIAL</span></a>
+                <ul class="level1">
+                  <li class="level1 first parent"><a href="#"><span>menu2</span></a>
+                    <ul class="level1 display--none">
+                      <li class="level1 first parent"><a href="#"><span>submenu1</span></a></li>
+                      <li class="level1 first parent"><a href="#"><span>submenu2</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li id="nav-home" class="level0 parent drop-menu"><a href="#" class="level-top"><span>BRAND</span></a>
+                <ul class="level1">
+                  <li class="level1 first parent"><a href="brand.html"><span>Brand Name</span></a></li>
+                  <li class="level1 first parent"><a href="brandname.html"><span>Brand Category</span></a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <!--End mobile-menu -->
-          <ul id="nav" class="">
-            <li id="nav-home" class="level0 parent drop-menu" style="border:none"><a href="#" ><span>PRODUCT</span> </a>
-              <ul class="level1">
-                <li class="level1 first parent"><a href="#" style="border:none"><span>Audio</span></a>
-                  <ul class="level1 display--none">
-                    <li class="level1 first parent"><a href="product.html"><span>Amplifiers</span></a> </li>
-                    <li class="level1 first parent"><a href="product.html"><span>Receivers</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Speakers</span></a></li>
-                    <li class="level1 parent"><a href="product.html"><span>HeadPhones</span></a> </li>
-               		</ul>
-                </li>
-                <li class="level1 first parent"><a href="#"><span>Cables</span></a>
-                	<ul class="level1 display--none">
-                    <li class="level1 first parent"><a href="product.html"><span>HDMI Cables</span></a> </li>
-                    <li class="level1 first parent"><a href="product.html"><span>VGA Cables</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Fibre Optics</span></a></li>
-                    <li class="level1 parent"><a href="product.html"><span>Bulk Wires & Cables</span></a> </li>
-                    <li class="level1 parent"><a href="product.html"><span>Component Cables</span></a> </li>
-                    <li class="level1 parent"><a href="product.html"><span>Connectors</span></a> </li>
-               		</ul>
-                </li>
-                <li class="level1 parent"><a href="#"><span>Computer</span></a>
-                	<ul class="level1 display--none">
-                    <li class="level1 first parent"><a href="product.html"><span>Tablets</span></a> </li>
-                    <li class="level1 first parent"><a href="product.html"><span>laptops</span></a></li>
-               		</ul>
-                </li>
-                <li class="level1 parent"><a href="#"><span>Mobiles</span></a>
-                	<ul class="level1 display--none">
-                    <li class="level1 first parent"><a href="product.html"><span>Mobile Video</span></a> </li>
-                    <li class="level1 first parent"><a href="product.html"><span>Mobile Audio</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Mobile Speakers</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Cellphone</span></a></li>
-               		</ul>
-                </li>
-                <li class="level1 parent"><a href="#"><span>Mounts</span></a>
-                	<ul class="level1 display--none">
-                    <li class="level1 first parent"><a href="product.html"><span>Furniture</span></a> </li>
-                    <li class="level1 first parent"><a href="product.html"><span>Wall Mounts</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Celling Mounts</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Mounting Brackets</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Rack / Rack Accessories</span></a></li>
-               		</ul>
-                </li>
-                <li class="level1 parent"><a href="#"><span>Security</span></a>
-                  <ul class="level1 display--none">
-                    <li class="level1 first parent"><a href="product.html"><span>DVR / NVR</span></a> </li>
-                    <li class="level1 first parent"><a href="product.html"><span>Cameras</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Panels</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Sensors</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Accessories</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Power Supplies</span></a></li>
-               		</ul>
-                </li>
-                <li class="level1 parent"><a href="#"><span>Custom I R</span></a>
-                	<ul class="level1 display--none">
-                    <li class="level1 first parent"><a href="product.html"><span>Remotes</span></a> </li>
-                    <li class="level1 first parent"><a href="product.html"><span>Tools</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Networking</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Pre-Wire / Rough-In</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>HDMI Extenders</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Matrix Switches</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Audio / Video Baluns, Scalers & Coverters</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>Splitters</span></a></li>
-                    <li class="level1 first parent"><a href="product.html"><span>IR</span></a></li>
-               		</ul>
-                </li>
-              </ul>
-            </li>
-            <li id="nav-home" class="level0 parent drop-menu"> <a href="#" class="level-top"> <span>CONSUMER</span> </a>
-              <ul class="level1">
-                <li class="level1 first parent"><a href="#"><span>menu2</span></a>
-                  <ul class="level1 display--none">
-                    <li class="level1 first parent"><a href="#"><span>submenu1</span></a> </li>
-                    <li class="level1 first parent"><a href="#"><span>submenu2</span></a></li>
-               		</ul>
-                </li>
-              </ul>
-            </li>
-            <li id="nav-home" class="level0 parent drop-menu"> <a class="level-top" href="#"> <span>COMMERCIAL</span> </a>
-              <ul class="level1">
-                <li class="level1 first parent"><a href="#"><span>menu2</span></a>
-                  <ul class="level1 display--none">
-                    <li class="level1 first parent"><a href="#"><span>submenu1</span></a> </li>
-                    <li class="level1 first parent"><a href="#"><span>submenu2</span></a></li>
-               		</ul>
-                </li>
-              </ul>
-            </li>
-            <li id="nav-home" class="level0 parent drop-menu"> <a class="level-top" href="#"> <span>BRAND</span> </a>
-              <ul class="level1">
-                <li class="level1 first parent"><a href="brand.html"><span>Brand Name</span></a></li>
-                <li class="level1 first parent"><a href="brandname.html"><span>Brand Category</span></a></li>
-              </ul>
-            </li>
-          </ul>
+        </div>
+      </nav>
+      <!-- This is the content area-->
+      <!-- end breadcrumbs-->
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="row">
+            <ul>
+              <li class="home"><a href="index.html" title="Go to Home Page">Home</a><span>  ⁄  </span></li>
+              <li><a href="grid.html" title="Go to Home Page">Video</a><span>  ⁄  </span></li>
+              <li class="category13"><strong> Television </strong></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </nav>
-
-
-
-    <!-- This is the content area -->
-
-    <!-- end breadcrumbs -->
-    <div class="breadcrumbs">
+      <!-- end breadcrumbs-->
+      <!-- main-container-->
+      <section class="main-container col1-layout">
+        <div class="main container">
+          <div class="col-main">
+            <div class="product-view">
+              <div class="product-essential">
+                <form id="product_addtocart_form" action="#" method="post">
+                  <input name="form_key" value="6UbXroakyQlbfQzK" type="hidden">
+                  <div class="product-img-box col-lg-4 col-sm-4 col-xs-12"><img src="../images/products-images/lg1.jpg" width="100%"></div>
+                  <div class="product-shop col-lg-8 col-sm-8 col-xs-12">
+                    <div class="product-name">
+                      <h3>LG V20 : Audio By B&O PLAY</h3>
+                      <h4>LGH990DS(SILVER)</h4>
+                    </div>
+                    <div class="col-md-3 brdrright">
+                      <h5>INSTOCK</h5>
+                      <h5>Availability: </h5>
+                      <div class="price-block">
+                        <div class="price-box">
+                          <p><span>NorthBrool,IL  :</span><span> Not In Stock </span></p>
+                          <p><span>ELK Grove Village,IL :</span><span>  Not In Stock </span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 brdrright">
+                      <h5>ORGINAL PRICE</h5>
+                      <p>MSRP : $ 300.00</p>
+                      <p>MAP : $ 150.00</p>
+                    </div>
+                    <div class="col-md-3 brdrright">
+                      <h5>YOUR PRICE</h5>
+                      <h4 style="border: 1px solid #ccc;padding: 10px;"> $ 165. 00</h4>
+                    </div>
+                    <div style="padding-right:0px" class="col-md-3">
+                      <div class="add-to-box">
+                        <div class="add-to-cart">
+                          <label for="qty" style="padding-right:5px;" class="algn">QTY:</label>
+                          <label style="padding-right:10px;">
+                            <input id="qty" type="text" title="Qty" value="1" maxlength="2" name="qty" style="width: 40px;height: 40px;padding: 10px;" onkeypress="return validate(event)" class="input-text qty">
+                          </label>
+                          <button onclick="productAddToCartForm.submit(this)" title="Add to Cart" type="button" class="button btn-cart"><span style="font-size: 1.1em;"><i class="fa fa-shopping-cart"></i> Add to Cart</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="background:#f1f1f1; margin-top:40px; margin-bottom:40px;padding:20px">
         <div class="container">
-            <div class="row">
+          <p>Additional Photos (Click on the image to enlarge it.)</p>
+          <div class="col-md-1 col-sm-3 col-xs-3">
+            <div id="pageone" data-role="main" class="ui-content"><a href="#myPopup" data-rel="popup" data-position-to="window"><img src="../images/products-images-small/lg2.jpg" alt="Skaret View" style="width:100%;"></a></div>
+          </div>
+          <div class="col-md-1 col-sm-3 col-xs-3">
+            <div id="pageone" data-role="main" class="ui-content"><a href="#myPopup" data-rel="popup" data-position-to="window"><img src="../images/products-images-small/lg3.jpg" alt="Skaret View" style="width:100%;"></a></div>
+          </div>
+          <div class="col-md-1 col-sm-3 col-xs-3">
+            <div id="pageone" data-role="main" class="ui-content"><a href="#myPopup" data-rel="popup" data-position-to="window"><img src="../images/products-images-small/lg2.jpg" alt="Skaret View" style="width:100%;"></a></div>
+          </div>
+        </div>
+      </section>
+      <!-- -detail tab-------->
+      <section style="margin-bottom:60px;" class="main-container col1-layout">
+        <div class="main container">
+          <div class="col-main">
+            <div class="responsive-tabs">
+              <h2>Product Description</h2>
+              <div class="std">
                 <ul>
-                    <li class="home"> <a href="index.html" title="Go to Home Page">Home</a><span>&nbsp; &frasl; &nbsp;</span></li>
-                    <li class=""> <a href="grid.html" title="Go to Home Page">Video</a><span>&nbsp; &frasl; &nbsp;</span></li>
-                    <li class="category13"><strong> Television </strong></li>
+                  <li>
+                    <p>
+                      B&O PLAY Collaboration-Hi-Fi Listening ExperienceIncredibly durable-805G Military CertificationWide-Angle Front & Rear Cameras to Get the Bigger PictureRecord Smoother, Clearer Videos Even on the Move14.47cm(5.7) Quad HD IPS
+                      Display4G LTE with VoLTE and VoWi-FI.
+                    </p>
+                  </li>
                 </ul>
+              </div>
+              <!-- -tab1 end---------->
+              <h2>Specification</h2>
+              <div class="std">
+                <ul>
+                  <li>
+                    <p>
+                      Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend
+                      laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere
+                      at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- -tab2 end---------->
+              <h2>Support</h2>
+              <div class="std">
+                <ul>
+                  <li>
+                    <p><strong> Comfortable </strong><span>
+                        preshrunk shirts. Highest Quality Printing.  6.1 oz. 100% preshrunk heavyweight cotton Shoulder-to-shoulder taping Double-needle sleeves and bottom hem
+                        Lorem Ipsumis
+                        simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, when
+                        an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the
+                        leap into electronic typesetting, remaining essentially unchanged. It
+                        was popularised in the 1960s with the release of Letraset sheets
+                        containing Lorem Ipsum passages, and more recently with desktop
+                        publishing software like Aldus PageMaker including versions of Lorem
+                        Ipsum.</span></p>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
+      <!-- -detail tab ends-------->
+      <!-- End main-container-->
+      <!-- This is the content area-->
     </div>
-    <!-- end breadcrumbs -->
-
-    <!-- main-container -->
-    <section class="main-container col1-layout">
-        <div class="main container">
-            <div class="col-main">
-
-                <div class="product-view">
-                    <div class="product-essential">
-                        <form action="#" method="post" id="product_addtocart_form">
-                            <input name="form_key" value="6UbXroakyQlbfQzK" type="hidden">
-                            <div class="product-img-box col-lg-4 col-sm-4 col-xs-12">
-                                <img src="../images/products-images/lg1.jpg" width="100%">
-                            </div>
-                            <div class="product-shop col-lg-8 col-sm-8 col-xs-12">
-                                <div class="product-name">
-                                    <h3>LG V20 : Audio By B&O PLAY</h3>
-                                    <h4>LGH990DS(SILVER)</h4>
-                                </div>
-                                <div class="col-md-3 brdrright">
-                                    <h5>INSTOCK</h5>
-                                    <h5>Availability: </h5>
-                                    <div class="price-block">
-                                        <div class="price-box">
-                                            <p> <span>NorthBrool,IL  :</span> <span> Not In Stock </span> </p>
-                                            <p> <span>ELK Grove Village,IL :</span> <span>  Not In Stock </span> </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 brdrright">
-                                    <h5>ORGINAL PRICE</h5>
-                                    <p>MSRP : $ 300.00</p>
-                                    <p>MAP : $ 150.00</p>
-                                </div>
-                                <div class="col-md-3 brdrright">
-                                    <h5>YOUR PRICE</h5>
-                                    <h4 style="border: 1px solid #ccc;padding: 10px;"> $ 165. 00</h4>
-                                </div>
-                                <div class="col-md-3" style="padding-right:0px">
-                                    <div class="add-to-box">
-                                        <div class="add-to-cart">
-                                            <label for="qty" class="algn" style="padding-right:5px;">QTY:</label>
-                                            <label style="padding-right:10px;"> <input type="text" class="input-text qty"  title="Qty" value="1" maxlength="2" id="qty" name="qty" style="width: 40px;height: 40px;padding: 10px;" onkeypress="return validate(event)"></label>
-
-                                            <button onClick="productAddToCartForm.submit(this)" class="button btn-cart" title="Add to Cart" type="button"><span style="font-size: 1.1em;" ><i class="fa fa-shopping-cart"></i> Add to Cart</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section style="background:#f1f1f1; margin-top:40px; margin-bottom:40px;padding:20px">
-        <div class="container">
-            <p>Additional Photos (Click on the image to enlarge it.)</p>
-            <div class="col-md-1 col-sm-3 col-xs-3">
-                <div id="pageone" data-role="main" class="ui-content">
-                    <a href="#myPopup" data-rel="popup" data-position-to="window">
-                        <img src="../images/products-images-small/lg2.jpg" alt="Skaret View" style="width:100%;"></a>
-                </div>
-            </div>
-            <div class="col-md-1 col-sm-3 col-xs-3">
-                <div id="pageone" data-role="main" class="ui-content">
-                    <a href="#myPopup" data-rel="popup" data-position-to="window">
-                        <img src="../images/products-images-small/lg3.jpg" alt="Skaret View" style="width:100%;"></a>
-                </div>
-            </div>
-            <div class="col-md-1 col-sm-3 col-xs-3">
-                <div id="pageone" data-role="main" class="ui-content">
-                    <a href="#myPopup" data-rel="popup" data-position-to="window">
-                        <img src="../images/products-images-small/lg2.jpg" alt="Skaret View" style="width:100%;"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- -detail tab-------->
-    <section class="main-container col1-layout" style="margin-bottom:60px;">
-        <div class="main container">
-            <div class="col-main">
-                <div class="responsive-tabs">
-                    <h2>Product Description</h2>
-                    <div class="std">
-                        <ul>
-                            <li>
-                                <p>B&O PLAY Collaboration-Hi-Fi Listening ExperienceIncredibly durable-805G Military CertificationWide-Angle Front & Rear Cameras to Get the Bigger PictureRecord Smoother, Clearer Videos Even on the Move14.47cm(5.7) Quad HD IPS
-                                    Display4G LTE with VoLTE and VoWi-FI.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!---tab1 end---------->
-                    <h2>Specification</h2>
-                    <div class="std">
-                        <ul>
-                            <li>
-                                <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend
-                                    laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere
-                                    at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- -tab2 end---------->
-                    <h2>Support</h2>
-                    <div class="std">
-                        <ul>
-                            <li>
-                                <p> <strong> Comfortable </strong><span>&nbsp;preshrunk shirts. Highest Quality Printing.  6.1 oz. 100% preshrunk heavyweight cotton Shoulder-to-shoulder taping Double-needle sleeves and bottom hem
-                          Lorem Ipsumis
-                          simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                          has been the industry's standard dummy text ever since the 1500s, when
-                          an unknown printer took a galley of type and scrambled it to make a type
-                          specimen book. It has survived not only five centuries, but also the
-                          leap into electronic typesetting, remaining essentially unchanged. It
-                          was popularised in the 1960s with the release of Letraset sheets
-                          containing Lorem Ipsum passages, and more recently with desktop
-                          publishing software like Aldus PageMaker including versions of Lorem
-                          Ipsum.</span></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- -detail tab ends-------->
-
-    <!--End main-container -->
-
-
-
-    <!-- This is the content area -->
-
-
-
-
-
-
-
-    <footer class="footer" style="visibility: visible;">
-      <div class="footer-middle container" style="border-bottom:3px solid #585858; padding-bottom:10px">
+    <footer style="visibility: visible;" class="footer">
+      <div style="border-bottom:3px solid #585858; padding-bottom:10px" class="footer-middle container">
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <h4>Advanced Links</h4>
             <ul class="links">
-              <li class=""><a href="#" title="">ABOUT</a></li>
+              <li><a href="#">ABOUT</a></li>
               <li><a href="" title="FAQs">MISSION</a></li>
-              <li><a href="#" title=""> NEW DEALER APPLICATION </a></li>
-              <li><a href="#" title=""> CAREER </a></li>
-              <li class="last"><a href="#" title="">CONTACT US</a></li>
+              <li><a href="#">NEW DEALER APPLICATION </a></li>
+              <li><a href="#">CAREER </a></li>
+              <li class="last"><a href="#">CONTACT US</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-4">
@@ -534,32 +480,29 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-xs-12 coppyright" style="padding-top:10px">
-        <p style="text-align:center; font-size:12px">
-           © 2015. All Rights Reserved. Designed by <a href="#" style="font-size:12px; color:#09F">opturasoft.com</a>
-        </p>
-       </div>
+      <div style="padding-top:10px" class="col-sm-12 col-xs-12 coppyright">
+        <p style="text-align:center; font-size:12px">© 2015. All Rights Reserved. Designed by <a href="#" style="font-size:12px; color:#09F">opturasoft.com</a></p>
+      </div>
     </footer>
-
-  </div>
-
-
-  <script src="../scripts/jquery.min.js" ></script>
-  <script src="../scripts/jquery-ui.min.js" ></script>
-  <script src="../scripts/bootstrap.min.js" ></script>
-  <script src="../scripts/clndr.js"></script>
-  <script src="../scripts/theme.js"></script>
-  <script src="../scripts/theme.init.js"></script>
-  <script src="../content/masterslider/masterslider.min.js"></script>
-  <script src="../scripts/jquery.flexisel.js"></script>
-  <script src="../scripts/common.js"></script>
-  <script src="../scripts/responsiveTabs.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/jquery-ui.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/marque.js"></script>
+    <script src="../scripts/clndr.js"></script>
+    <script src="../scripts/theme.js"></script>
+    <script src="../scripts/theme.init.js"></script>
+    <script src="../content/masterslider/masterslider.min.js"></script>
+    <script src="../scripts/jquery.flexisel.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/underscore-min.js"></script>
+    <script src="../scripts/moment-2.2.1.js"></script>
+    <script src="../scripts/site.js"></script>
+    <link rel="stylesheet" href="../content/responsive-tabs.css">
+    <script src="../scripts/responsiveTabs.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
       RESPONSIVEUI.responsiveTabs();
-    });
-  </script>
-
-</body>
+      });
+    </script>
+  </body>
 </html>
