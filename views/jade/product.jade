@@ -1,0 +1,207 @@
+doctype html
+html(lang="en")
+  include common/head
+  body
+    .body
+      include common/nav
+      // This is the content area
+      // end nav
+      // breadcrumbs
+      .breadcrumbs
+        .container
+          .row
+            ul
+              li.home
+                a(href='index.html', title='Go to Home Page') Home
+                span  ⁄ 
+              li
+                a(href='#.html', title='Go to Home Page') Video
+                span  ⁄
+              li
+                a(href='#.html', title='Go to Home Page') Television
+      // End breadcrumbs
+      // main-container
+      .main-container.col2-left-layout
+        .main.container
+          .row
+            // tab starts---
+            aside.col-left.sidebar.col-sm-12.col-md-3(style='visibility: visible; ')
+              .responsive-tabs
+                h2 Narrow Your Result
+                .std
+                  ul
+                    li
+                      .block.block-layered-nav
+                        .block-content
+                          p.block-subtitle(style='padding-top:0px') YOU HAVE SELECTED
+                          .catgry
+                            h4.catgryh4 CATEGORY
+                            h5.catgryh5 Video
+                            .access
+                              a.btn-remove1(title='Remove This Item', href='#')
+                                span.icon
+                                |  Remove
+                          h4.catgryh4 SUBCATEGORY
+                          h5.catgryh5 Television
+                          .access
+                            a.btn-remove1(title='Remove This Item', href='#')
+                              span.icon
+                              |  Remove
+                          dl#narrow-by-list
+                            dt.odd Price
+                            dd.odd
+                              ol
+                                li
+                                  a(href='#')
+                                    span.price $0.00
+                                    |  - 
+                                    span.price $99.99
+                                  |  (6)
+                                li
+                                  a(href='#')
+                                    span.price $100.00
+                                    |  and above
+                                  |  (6)
+                            dt.even RESOLUTION
+                            dd.even
+                              ol
+                                li
+                                  a(href='#') Ultra HD
+                                  |  (9)
+                            dt.odd Display Size
+                            dd.odd
+                              ol
+                                li
+                                  a(href='#') 32inch
+                                  |  (1)
+                            dt.last.even
+                              a
+                                font(color='#0066CC') CLEAR ALL
+            // tab End
+            section.col-main.col-sm-12.col-md-9
+              .control1(style='background:#f1f1f1;padding: 10px 10px 2px 10px;color: #666;')
+                .product-next-prev
+                  a.product-first(href='#')
+                    | FIRST
+                    span
+                  a.product-prev(href='#')
+                    span
+                    | PREVIOUS
+                  a.product-pag-num.selected-page-nin(href='#') 1
+                  a.product-pag-num(href='#') 2
+                  a.product-pag-num(href='#') 3
+                  a.product-pag-num(href='#') ..
+                  a.product-pag-num(href='#') 999
+                  a.product-pag-num(href='#') 1000
+                  a.product-next(href='#')
+                    | NEXT
+                    span
+                  a.product-last(href='#')
+                    span
+                    | LAST
+                .product-name
+                  p Displaying 21 - 29 of 29
+              .category-products
+                .toolbar
+                  .content
+                    // sorting, pages
+                    .list_manage
+                      .inner.clearfix
+                        form.form_sort(action='#', method='post')
+                          span.manage_title Sort by:
+                          select#sort_list.select_styled.white_select(name='sort_list')
+                            option(value='1', data-sort='ladd') Relevance
+                            option(value='2', selected='', data-sort='price') Name
+                            option(value='3', data-sort='loc') Price
+                  ul.products-grid
+                    li.item.col-md-12(style='')
+                      .col-md-2.col-sm-2.col-xs-3
+                        .col-item
+                          .product-image-area
+                            a.product-image(title='Sample Product', href='product_detail.html')
+                              img.img-responsive(src='../images/products-images/SB-6574UHD-1F.jpg', alt='a')
+                      .col-sm-5.col-xs-8.col-md-5
+                        .info
+                          .info-inner
+                            // item-title
+                            .short-description
+                              a(href='product_detail.html')
+                                h4 SunBriteTV® Veranda Series 4K Ultra HD Outdoor TV - 65" (Black)
+                              p
+                                | Outdoor TV performance at an extremely competitive price point Premium 4K UHD screen with direct LED backlight for full shade applications Available in 43", 55", and 65" (black)
+                          // item-content
+                        // info-inner
+                      .label1
+                        .col-sm-5.col-md-5.col-xs-12
+                          label.label1
+                            p INSTOCK
+                            label.label1(for='qty')
+                              | QTY
+                              input#qty.input-text.qty(type='text', title='Qty', value='1', maxlength='2', name='qty', style='width: 40px;height: 40px;padding: 10px; text-align: center;')
+                          button.button.btn-cart(onclick='productAddToCartForm.submit(this)', title='Add to Cart', type='button')
+                            span
+                              i.fa.fa-shopping-cart
+                              |  Add to Cart
+                    .clearfix
+                    .sh-divider-line.solid.light.margin
+                    // item2
+                    li.item.col-sm-12(style='padding-top:30px')
+                      .col-md-2.col-sm-2.col-xs-3
+                        .col-item
+                          .product-image-area
+                            a.product-image(title='Sample Product', href='product_detail.html')
+                              img.img-responsive(src='../images/products-images/SB-5518HD-BL-F1.jpg', alt='a')
+                      .col-sm-5.col-xs-8.col-md-5
+                        .info
+                          .info-inner
+                            // item-title
+                            .short-description
+                              a(href='product_detail.html')
+                                h4 SunBriteTV® Pro Series Direct Sun Outdoor TV - 55" (Black)
+                              p
+                                | Bright, full HD 1080p LED screen for outdoor viewing Heat dispersion system keeps unit cool and dry Available in black, silver, or white
+                          // item-content
+                        // info-inner
+                      .label1
+                        .col-sm-5.col-md-5.col-xs-12
+                          label.label1
+                            p INSTOCK
+                            label.label1(for='qty')
+                              | QTY
+                              input#qty.input-text.qty(type='text', title='Qty', value='1', maxlength='2', name='qty', style='width: 40px;height: 40px;padding: 10px;text-align: center;')
+                          button.button.btn-cart(onclick='productAddToCartForm.submit(this)', title='Add to Cart', type='button')
+                            span
+                              i.fa.fa-shopping-cart
+                              |  Add to Cart
+                    // item 2 ends
+              .control1(style='background:#f1f1f1;padding: 10px 10px 2px 10px;color: #666;')
+                .product-next-prev
+                  a.product-first(href='#')
+                    | FIRST
+                    span
+                  a.product-prev(href='#')
+                    span
+                    | PREVIOUS
+                  a.product-pag-num.selected-page-nin(href='#') 1
+                  a.product-pag-num(href='#') 2
+                  a.product-pag-num(href='#') 3
+                  a.product-pag-num(href='#') ..
+                  a.product-pag-num(href='#') 999
+                  a.product-pag-num(href='#') 1000
+                  a.product-next(href='#')
+                    | NEXT
+                    span
+                  a.product-last(href='#')
+                    span
+                    | LAST
+                .product-name
+                  p Displaying 21 - 29 of 29
+        // This is the content area
+    include common/footer
+    include common/scripts
+    link(rel='stylesheet', href='../content/responsive-tabs1.css')
+    script(src='../scripts/responsiveTabs.js')
+    script(type='text/javascript').
+      $(document).ready(function(){
+      RESPONSIVEUI.responsiveTabs();
+      });

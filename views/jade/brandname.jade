@@ -1,0 +1,73 @@
+doctype html
+html(lang="en")
+  include common/head
+  body
+    .body.brandname
+      include common/nav
+      // This is the content area
+      // breadcrumbs
+      .breadcrumbs
+        .container
+          .row
+            ul
+              li.home
+                a(href='index.html', title='Go to Home Page') Home
+                span  ⁄ 
+              li
+                a(href='grid.html', title='Go to Home Page') CED Brands
+                span  ⁄ 
+              li
+                a(href='grid.html', title='Go to Home Page') Brand Name
+      // End breadcrumbs
+      // main container
+      section.latest-category(style='margin-bottom:20px; margin-top:20px;')
+        .container
+          .page-title
+            h2(style=' border-bottom:1px solid #f1f1f1; padding-bottom:10px; margin-bottom:10px; text-align:left') CATEGORY
+          .col-xxs-6.col-xs-6.col-sm-4.col-md-3.col-lg-3
+            .category-img
+              img(src='../images/cat-images/audio.jpg', alt='Image')
+            h2
+              a(href='product.html') Audio
+          .col-xxs-6.col-xs-6.col-sm-4.col-md-3.col-lg-3
+            .category-img
+              img(src='../images/cat-images/cable.jpg', alt='Image')
+            h2
+              a(href='product.html') CABLES
+          .col-xxs-6.col-xs-6.col-sm-4.col-md-3.col-lg-3.product-tile.img-responsive
+            .category-img
+              img(src='../images/cat-images/computer.jpg', alt='Image')
+            h2
+              a(href='product.html') COMPUTER
+          .col-xxs-6.col-xs-6.col-sm-4.col-md-3.col-lg-3
+            .category-img
+              img(src='../images/cat-images/mobile.jpg', alt='Image')
+            h2
+              a(href='product.html') MOBILE
+          br
+          br
+          .col-xxs-6.col-xs-6.col-sm-4.col-md-3.col-lg-3
+            .category-img
+              img(src='../images/cat-images/mount.jpg', alt='Image')
+            h2
+              a(href='product.html') MOUNTS
+          .col-xxs-6.col-xs-6.col-sm-4.col-md-3.col-lg-3
+            .category-img
+              img(src='../images/cat-images/security.jpg', alt='Image')
+            h2
+              a(href='product.html') SECURITY
+          .col-xxs-6.col-xs-6.col-sm-4.col-md-3.col-lg-3
+            .category-img
+              img(src='../images/cat-images/monitor.jpg', alt='Image')
+            h2
+              a(href='product.html') VIDEOS
+          .col-xxs-6.col-xs-6.col-sm-4.col-md-3.col-lg-3
+            .category-img
+              img(src='../images/cat-images/remote.jpg', alt='Image')
+            h2
+              a(href='product.html') CUSTOM IR
+      // End main container
+      // This is the content area
+
+    include common/footer
+    include common/scripts

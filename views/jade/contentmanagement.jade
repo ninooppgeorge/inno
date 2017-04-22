@@ -1,0 +1,259 @@
+doctype html
+html(lang="en")
+  include common/head
+  body
+    .body.contentmanagement
+      include common/nav
+      // This is the content area
+      // breadcrumbs
+      .breadcrumbs
+        .container
+          .row
+            ul
+              li.home
+                a(href='index.html', title='Go to Home Page') HOME
+                span  ⁄ 
+              li
+                a(href='#', title='Go to Home Page') CONTENT MANAGEMENT
+      // End breadcrumbs
+      // Two columns content
+      .main-container.col2-left-layout
+        .main.container
+          .row
+            aside.col-left.sidebar.col-sm-3(style='visibility: visible;')
+              .block.block-account
+                .block-title
+                  a(href='my_account.html')
+                    i.fa.fa-lock(style='color: #888;')
+                    |    My Account
+                .block-content
+                  ul
+                    li
+                      a(href='#') Contact Details
+                    li
+                      a(href='#') Address Book
+                .block-title
+                  a(href='usermanagement.html')
+                    i.fa.fa-user(style='color: #888;')
+                    |    User Management
+                .block-content
+                  ul
+                    li
+                      a(href='#') Manage Users
+                    li
+                      a(href='#') Manage Roles
+                    li
+                      a(href='#') Manage Permissions
+                .block-title
+                  a(href='contentmanagement.html')
+                    i.fa.fa-tasks(style='color: #888;')
+                    |    Content Management
+                .block-content
+                  ul
+                    li
+                      a(href='#') Manage Rotating Banner
+                    li
+                      a(href='#') Manage Static Banner
+                    li
+                      a(href='#') Manage News
+                    li
+                      a(href='#') Manage Events
+                .block-title
+                  a(href='orderhistory.html')
+                    i.fa.fa-history(style='color: #888;')
+                    |    Order History
+                .block-content
+                  ul
+                    li
+                      a(href='#') Order Status
+            section.col-main.col-sm-9(style=' background:#f0f0f0;padding-top: 15px;')
+              .category-products
+                .toolbar(style='padding-top:0px')
+                  .content
+                    .page-title
+                      h2(style=' border-bottom:1px solid #f1f1f1; padding-bottom:10px; margin-bottom:10px') Content Management
+                    h4 Manage Rotating Banner
+                    .table-responsive
+                      form(method='post', action='#updatePost/')
+                        input(type='hidden', value='Vwww7itR3zQFe86m', name='form_key')
+                        fieldset
+                          table#shopping-cart-table.data-table
+                            thead
+                              tr.first.last
+                                th(rowspan='1')
+                                  span.nobr Select
+                                th.a-center(colspan='1')
+                                  span.nobr Image Description
+                                th.a-center(rowspan='1') Image preview
+                                th.a-center(colspan='2') Action
+                            tbody
+                              tr.first.odd
+                                td
+                                  input(type='checkbox')
+                                td
+                                  h5.product-name
+                                    a(href='#') Image1
+                                td
+                                  span.cart-price  Display Image 
+                                td
+                                  a.edit-bnt(title='Edit item parameters', href='#configure/id/15945/')
+                                td
+                                  a.remove-item(title='Remove item', href='#')
+                                    span
+                                      span Remove item
+                              tr.first.even
+                                td
+                                  input(type='checkbox')
+                                td
+                                  h5.product-name
+                                    a(href='#') Image2
+                                td
+                                  span.cart-price  Display Image
+                                td
+                                  a.edit-bnt(title='Edit item parameters', href='#configure/id/15945/')
+                                td
+                                  a.remove-item(title='Remove item', href='#')
+                                    span
+                                      span Remove item
+                              // -End Row----
+                              tr.last.even
+                                td
+                                  input(type='checkbox')
+                                td
+                                  h5.product-name
+                                    a(href='#') Image3
+                                td
+                                  span.cart-price  Display Image 
+                                td
+                                  a.edit-bnt(title='Edit item parameters', href='#configure/id/15946/')
+                                td
+                                  a.remove-item(title='Remove item', href='#')
+                                    span
+                                      span Remove item
+                            tfoot
+                              tr.first.last
+                                td.a-right.last(colspan='7')
+                                  button.button.btn-update(title='Update Cart', value='update_qty', name='update_cart_action', type='submit', style='float:right')
+                                    span
+                                      span Add Banner
+                    .clearfix
+                    h4 Manage Static Banner
+                    .table-responsive
+                      form(method='post', action='#updatePost/')
+                        input(type='hidden', value='Vwww7itR3zQFe86m', name='form_key')
+                        fieldset
+                          table#shopping-cart-table.data-table
+                            thead
+                              tr.first.last
+                                th(rowspan='1')
+                                  span.nobr Select
+                                th.a-center(colspan='1')
+                                  span.nobr Image Description
+                                th.a-center(rowspan='1') Image preview
+                                th.a-center(colspan='2') Action
+                            tbody
+                              tr.first.odd
+                                td
+                                  input(type='checkbox')
+                                td
+                                  h5.product-name
+                                    a(href='#') Image1
+                                td
+                                  span.cart-price  Display Image 
+                                td
+                                  a.edit-bnt(title='Edit item parameters', href='#configure/id/15945/')
+                                td
+                                  a.remove-item(title='Remove item', href='#')
+                                    span
+                                      span Remove item
+                              tr.first.even
+                                td
+                                  input(type='checkbox')
+                                td
+                                  h5.product-name
+                                    a(href='#') Image2
+                                td
+                                  span.cart-price  Display Image
+                                td
+                                  a.edit-bnt(title='Edit item parameters', href='#configure/id/15945/')
+                                td
+                                  a.remove-item(title='Remove item', href='#')
+                                    span
+                                      span Remove item
+                              // -End Row----
+                            tfoot
+                              tr.first.last
+                                td.a-right.last(colspan='7')
+                                  button.button.btn-update(title='Update Cart', value='update_qty', name='update_cart_action', type='submit', style='float:right')
+                                    span
+                                      span Add Banner
+                    .clearfix
+                    h4 Manage News
+                    .group-select
+                      ul
+                        li
+                          .customer-name
+                            .input-box(style='width:100%')
+                              label(for='billing:firstname')
+                                | News Title
+                                span.required *
+                              br
+                              input#title.input-text(type='text', name='title', value='', title='Title')
+                        li
+                          .input-box
+                            label(for='billing:company')
+                              | News Posted By 
+                              em.required *
+                            br
+                            input#news.input-text(type='text', name='news', value='', title='news')
+                          .input-box
+                            label(for='billing:company')
+                              | Date 
+                              em.required *
+                            br
+                            input#news.input-text(type='text', name='news', value='', title='news')
+                        li
+                          div
+                            label(for='comment')
+                              | News Content
+                              em.required *
+                            .clearfix
+                            textarea#comment.required-entry.input-text(name='comment', title='Comment', cols='5', rows='3', style='height: 120px;')
+                        .buttons-set
+                          button.button.submit(type='submit', title='Submit')
+                            span  Post News 
+                    .clearfix
+                    h4 Manage Events
+                    br
+                    // page start
+                    .row.mt
+                      aside.col-lg-4.mt
+                        #external-events
+                          .external-event.label My Event 1
+                          .external-event.label My Event 2
+                          .external-event.label My Event 3
+                          .external-event.label My Event 4
+                          .external-event.label My Event 5
+                          .external-event.label My Event 6
+                          .external-event.label My Event 7
+                          .external-event.label My Event 8
+                          .external-event.label My Event 9
+                      aside.col-lg-8.mt
+                        section.panel
+                          .panel-body
+                            #calendar.has-toolbar
+                    // page end
+      // This is the content area
+    include common/footer
+    script(src='../scripts/jquery.min.js')
+    script(src='../scripts/jquery-ui.min.js')
+    script(src='../scripts/bootstrap.min.js')
+    script(src='../scripts/clndr.js')
+    script(src='../scripts/theme.js')
+    script(src='../scripts/theme.init.js')
+    script(src='../content/masterslider/masterslider.min.js')
+    script(src='../scripts/jquery.flexisel.js')
+    script(src='../scripts/fullcalendar/fullcalendar.min.js')
+    script(src='../scripts/calendar-conf-events.js')
+    script(src='../scripts/common.js')
+    link(rel='stylesheet', href='../scripts/fullcalendar/bootstrap-fullcalendar.css')
