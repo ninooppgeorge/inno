@@ -3890,10 +3890,12 @@ fieldset {
 /*  prev-next-products ==*/
 
 .product-next-prev {
-	margin: auto;
-	position: absolute;
-	right: 15px;
-	margin-top: -5px;
+  margin-top: -5px;
+  width: 65%;
+  float: right;
+}
+.product-name{
+  width: 50%;
 }
 .product-prev {
 	margin: 0 0 0 0px;
@@ -4034,6 +4036,32 @@ fieldset {
 .selected-page-nin{
 	background: #c13333 !important;
 	color: #fff;
+}
+
+
+
+@media (max-width: 576px) {
+  .product-first, .product-last,.smallhide{
+    display: none !important;
+  }
+  .product-name {
+    width: 100%;
+    padding-left: 3%;
+    padding-top: 40px;
+  }
+  .product-next-prev {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 992px) {
+
 }
 
 
@@ -9095,7 +9123,7 @@ button.subscribe:before {
     transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
 }
 .product-name p{
-	width:80px;
+	width:150px;
 }
 .product-view .flexslider-thumb {
 	padding: 0 68px;

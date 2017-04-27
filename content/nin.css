@@ -5,7 +5,9 @@
 .margin-top--0{
   margin-top: 0px !important;
 }
-
+.margin-left--10{
+  margin-left: 10px !important;
+}
 .claimmsg{
   font-size: 12px;
   margin-left: 0px;
@@ -327,4 +329,14 @@
 }
 .multisel{
 
+}
+.ninsidebar{
+
+}
+.ninsidebar dt {
+    font-size: 14px !important;
+    font-weight: bold !important;
+    color: #555 !important;
+    text-transform: uppercase;
+    font-family: 'Open sans';
 }
