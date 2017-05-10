@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../content/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../content/masterslider/style/masterslider.css">
     <link rel="stylesheet" href="../content/brand.css">
+    <link rel="stylesheet" href="../content/magnific-popup.css">
   </head>
   <body>
     <div class="body">
@@ -331,6 +332,7 @@
       </div>
       <!-- end breadcrumbs-->
       <!-- main-container-->
+      <section class="gal_par">
       <section class="main-container col1-layout">
         <div class="main container">
           <div class="col-main">
@@ -338,7 +340,7 @@
               <div class="product-essential">
                 <form id="product_addtocart_form" action="#" method="post">
                   <input name="form_key" value="6UbXroakyQlbfQzK" type="hidden">
-                  <div class="product-img-box col-lg-4 col-sm-4 col-xs-12"><img src="../images/products-images/lg1.jpg" width="100%"></div>
+                  <div class="product-img-box col-lg-4 col-sm-4 col-xs-12"><a href="../images/products-images/lg1.jpg"><img src="../images/products-images/lg1.jpg" width="100%"></a></div>
                   <div class="product-shop col-lg-8 col-sm-8 col-xs-12">
                     <div class="product-name">
                       <h3>LG V20 : Audio By B&O PLAY</h3>
@@ -385,15 +387,16 @@
         <div class="container">
           <p>Additional Photos (Click on the image to enlarge it.)</p>
           <div class="col-md-1 col-sm-3 col-xs-3">
-            <div id="pageone" data-role="main" class="ui-content"><a href="#myPopup" data-rel="popup" data-position-to="window"><img src="../images/products-images-small/lg2.jpg" alt="Skaret View" style="width:100%;"></a></div>
+            <div id="pageone" data-role="main" class="ui-content"><a href="../images/products-images-small/lg2.jpg" data-rel="popup" data-position-to="window"><img src="../images/products-images-small/lg2.jpg" alt="Skaret View" style="width:100%;"></a></div>
           </div>
           <div class="col-md-1 col-sm-3 col-xs-3">
-            <div id="pageone" data-role="main" class="ui-content"><a href="#myPopup" data-rel="popup" data-position-to="window"><img src="../images/products-images-small/lg3.jpg" alt="Skaret View" style="width:100%;"></a></div>
+            <div id="pageone" data-role="main" class="ui-content"><a href="../images/products-images-small/lg3.jpg" data-rel="popup" data-position-to="window"><img src="../images/products-images-small/lg3.jpg" alt="Skaret View" style="width:100%;"></a></div>
           </div>
           <div class="col-md-1 col-sm-3 col-xs-3">
-            <div id="pageone" data-role="main" class="ui-content"><a href="#myPopup" data-rel="popup" data-position-to="window"><img src="../images/products-images-small/lg2.jpg" alt="Skaret View" style="width:100%;"></a></div>
+            <div id="pageone" data-role="main" class="ui-content"><a href="../images/products-images-small/lg2.jpg" data-rel="popup" data-position-to="window"><img src="../images/products-images-small/lg2.jpg" alt="Skaret View" style="width:100%;"></a></div>
           </div>
         </div>
+      </section>
       </section>
       <!-- -detail tab-------->
       <section style="margin-bottom:60px;" class="main-container col1-layout">
@@ -499,9 +502,19 @@
     <script src="../scripts/site.js"></script>
     <link rel="stylesheet" href="../content/responsive-tabs.css">
     <script src="../scripts/responsiveTabs.js"></script>
+    <script src="../scripts/imagezoom.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
       RESPONSIVEUI.responsiveTabs();
+
+      $('.gal_par').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery:{
+          enabled:true
+        }
+        // other options
+      });
       });
     </script>
   </body>
