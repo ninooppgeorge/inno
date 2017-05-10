@@ -60,6 +60,19 @@ $(document).ready(function() {
 
 
 
+
+
+  $(document).on('click','.avatarimage',function(){
+    $('.popnin').css('visibility','visible');
+  });
+
+  $(document).mouseup(function(e) {
+      var $container = $(".popnin");
+      if (!$container.is(e.target) && $container.has(e.target).length === 0) {
+          $container.css('visibility','hidden');
+      }
+  });
+
 });
 
 

@@ -25,15 +25,16 @@
   margin-right: 10px;
 }
 .avatarimage:hover .popnin{
-  visibility: visible;
+  /* visibility: visible;
   -webkit-transition: all ease 1s;
+  */
 }
 .avatarimage .popnin{
   border: 1px solid #ddd;
   padding: 20px;
   display: block;
   position: absolute;
-  -webkit-transition: all ease 1s;
+  -webkit-transition: all ease 0.2s;
   z-index: 1000;
   background: #fff;
   margin-left: -120px;
