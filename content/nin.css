@@ -383,9 +383,16 @@ margin-right: -10px;
   .white-box{
     top:10% !important;
   }
+  .toplinks .no{
+    display: none !important;
+  }
 }
 @media (min-width:500px) and (max-width:768px){
   .white-box{
     top:15% !important;
+  }
+
+  .toplinks .no{
+    display: none !important;
   }
 }
