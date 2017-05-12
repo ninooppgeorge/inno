@@ -341,3 +341,48 @@
     text-transform: uppercase;
     font-family: 'Open sans';
 }
+
+
+
+.login-model{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100vh;
+  z-index: 1000;
+  width: 100%;
+  margin: 0px !important;
+}
+.login-model .login-bg{
+  background:rgba(93, 93, 93, 0.35);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.login-model .white-box{
+  background: #fff;
+  padding: 30px;
+  display: block;
+  z-index: 1006;
+  position: absolute;
+  top: 40px;
+}
+.login-model .white-box .close{
+  margin-top: -15px;
+margin-right: -10px;
+}
+@media (max-width:500px){
+  .white-box{
+    top:10% !important;
+  }
+}
+@media (min-width:500px) and (max-width:768px){
+  .white-box{
+    top:15% !important;
+  }
+}

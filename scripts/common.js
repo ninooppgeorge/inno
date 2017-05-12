@@ -73,6 +73,19 @@ $(document).ready(function() {
       }
   });
 
+  $(document).on('click','.show_login_popup',function(){
+    $('.login-model').show();
+  });
+  $(document).on('click','.login_model_close',function(){
+    $('.login-model').hide();
+  });
+
+  $(document).mouseup(function(e) {
+      var $container = $(".white-box");
+      if (!$container.is(e.target) && $container.has(e.target).length === 0) {
+          $('.login-model').hide();
+      }
+  });
 });
 
 

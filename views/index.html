@@ -26,7 +26,7 @@
               <div class="col-xs-6">
                 <div class="toplinks">
                   <div class="links">
-                    <div><a title="Login" href="login.html"><span class="hidden-xs"><font color="#c13333">LOGIN</font></span></a></div> |
+                    <div><a title="Login" class="show_login_popup" href="#"><span class="hidden-xs"><font color="#c13333">LOGIN</font></span></a></div> |
                     <div><a title="Login" href="login.html"><font color="#c13333">REGISTER</font></a></div>
                     <div class="no"><a title="Checkout" href="contact.html"><i class="fa fa-phone"></i>  (847) 656 8900</a></div>
                   </div>
@@ -35,6 +35,37 @@
             </div>
           </div>
         </div>
+
+        <div class="login-model row">
+          <div class="login-bg"></div>
+          <div class="white-box col-sm-offset-8 col-xs-12 col-sm-4 col-md-3">
+            <form action="">
+              <div class="content">
+                <strong>LOG IN</strong>
+                <button type="button" class="close login_model_close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p>If you have an account with us, please log in.</p>
+                <ul class="form-list">
+                  <li>
+                    <label for="email">Email Address <span class="required">*</span></label><br>
+                    <input id="email" type="text" title="Email Address" value="" name="login[username]" class="input-text required-entry">
+                  </li>
+                  <li>
+                    <label for="pass">Password <span class="required">*</span></label><br>
+                    <input id="pass" type="password" title="Password" name="login[password]" class="input-text required-entry validate-password">
+                  </li>
+                </ul>
+                <a href="" class="forgot-word">Forgot Your Password?</a>
+                <p class="required">* Required Fields</p>
+                <div class="buttons-set">
+                  <button id="send2" name="send" type="submit" class="button login btn-block"><span>Login</span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+
         <div class="header container">
           <div class="row">
             <div class="col-lg-3 col-sm-3 col-md-2">
