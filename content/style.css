@@ -3891,7 +3891,6 @@ fieldset {
 
 .product-next-prev {
   margin-top: -5px;
-  width: 65%;
   float: right;
 }
 .product-name{
@@ -3921,8 +3920,8 @@ fieldset {
 	border-radius: 2px
 }
 .product-next-prev .product-prev:hover {
-	color: #999;
-
+  background: #c13333 !important;
+color: #fff;
 	text-decoration: none;
 }
 .product-next {
@@ -3948,7 +3947,8 @@ fieldset {
 	transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
 }
 .product-next-prev .product-next:hover {
-	color: #999;
+  background: #c13333 !important;
+  color: #fff;
 	border-radius: 2px;
 	text-decoration: none;
 }

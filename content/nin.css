@@ -376,6 +376,9 @@
   margin-top: -15px;
 margin-right: -10px;
 }
+.btn-cart{
+  margin-top: 3.3em !important;
+}
 @media (max-width:500px){
   .white-box{
     top:10% !important;
