@@ -2,6 +2,10 @@
     display: none;
 }
 
+#mobile-menu .fa{
+  color: #fff; 
+}
+
 .brandd .category-img {
     position: relative;
     padding: 5px;
