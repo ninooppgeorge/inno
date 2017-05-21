@@ -7,6 +7,14 @@ function slideEffectAjax() {
     })
 }
 
+ $(window).load( function() {
+        $('#mycalendar').monthly({
+            mode: 'event',
+			jsonUrl: 'events.json',
+			dataType: 'json'
+        });
+    });
+
 $(document).ready(function() {
   "use strict";
 	$(".toggle1").hide();
