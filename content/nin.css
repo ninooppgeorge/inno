@@ -16,6 +16,9 @@
   padding-top: 10px;
   color: #777;
 }
+body{
+  overflow-x: hidden;
+}
 .avatarimage{
 
 }
@@ -399,5 +402,17 @@ margin-right: -10px;
 @media screen and (max-width: 767px){
   .table-responsive{
     border: none !important;
+  }
+}
+@media (min-width:300px) and (max-width:500px){
+  .footer-middle .links li{
+       display: list-item !important; 
+  }
+  .footer{
+    text-align: left !important;
+  }
+  .footer-middle .col-md-6{
+        width: 50% !important;
+        float: left;
   }
 }
