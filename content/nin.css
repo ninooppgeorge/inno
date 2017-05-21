@@ -382,6 +382,58 @@ margin-right: -10px;
 .btn-cart{
   margin-top: 3.3em !important;
 }
+
+.linkednav{
+}
+
+.linkednav ul li .profilebartop .imageconi{
+}
+.linkednav ul li .profilebartop .imageconi img{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.linkednav ul li .profilebartop .otherco{
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.linkednav ul li .profilebartop .otherco p .username{
+  font-size: 20px;
+}
+.linkednav .dropdown-header{
+  font-weight: bold;
+}
+.linkednav .dropdown-cont a{
+  font-weight: normal !important;
+  display: block !important;
+  padding: 3px 20px !important;
+  
+}
+
+.links .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    width: 270px;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
+}
+
 @media (max-width:500px){
   .white-box{
     top:10% !important;
