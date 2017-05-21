@@ -396,3 +396,8 @@ margin-right: -10px;
     display: none !important;
   }
 }
+@media screen and (max-width: 767px){
+  .table-responsive{
+    border: none !important;
+  }
+}
